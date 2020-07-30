@@ -62,7 +62,7 @@ export default function ProminentAppBar() {
       <AppBar position="static" className={classes.AppBar}>
         <Toolbar className={classes.toolbar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            Let's Connect: 
+            Let's Connect: CI
           </Typography>
           <Button aria-label="search" color="inherit" href="https://github.com/hprabesh" target="_blank"  classes={{ root: classes.button, label: classes.label }} variant="text"><GitHubIcon className={classes.icon}/>GitHub</Button>
           <Button aria-label="display more actions" href="https://www.linkedin.com/in/hprabesh" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><LinkedInIcon className={classes.icon}/>LinkedIn</Button>
