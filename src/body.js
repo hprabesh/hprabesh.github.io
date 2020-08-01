@@ -1,17 +1,31 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Typography from '@material-ui/core/Typography';
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles, makeStyles } from "@material-ui/core/styles";
 const WhiteTextTypography = withStyles({
     root: {
-      color: "#FFFFFF"
+      color: "#FFFFFF",
+      
     }
   })(Typography);
+  const useStyles = makeStyles((theme) => ({
+    root: {
+      flexGrow: 1,
+      maxWidth: 430,
+      margin: `${theme.spacing(10)}px auto`,
+      marginLeft:`${theme.spacing(30)}px auto`,
+      padding: theme.spacing(0),
+      background:'transparent',
+      marginBottom:`${theme.spacing(-15)}px auto`
+    }    
+  }));
  
 export default function Home(){
+    const classes=useStyles();
+
     return(
         <React.Fragment>
-            <WhiteTextTypography variant="h5">
+            <WhiteTextTypography variant="h5" className={classes.root}>
                 <Typewriter
                 options={{
                     strings: ['Hi There!', 'It\'s me Prabesh Humagain','Web Developer'],

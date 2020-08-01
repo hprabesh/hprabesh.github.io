@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     maxWidth: 430,
-    margin: `${theme.spacing(29)}px auto`,
+    margin: `${theme.spacing(0)}px auto`,
     marginLeft:`${theme.spacing(30)}px auto`,
     padding: theme.spacing(0),
     background:'transparent',
@@ -62,7 +62,7 @@ export default function ProminentAppBar() {
       <AppBar position="static" className={classes.AppBar}>
         <Toolbar className={classes.toolbar}>
           <Typography className={classes.title} variant="h6" noWrap>
-            Let's Connect: CI
+            Let's Connect:
           </Typography>
           <Button aria-label="search" color="inherit" href="https://github.com/hprabesh" target="_blank"  classes={{ root: classes.button, label: classes.label }} variant="text"><GitHubIcon className={classes.icon}/>GitHub</Button>
           <Button aria-label="display more actions" href="https://www.linkedin.com/in/hprabesh" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><LinkedInIcon className={classes.icon}/>LinkedIn</Button>
