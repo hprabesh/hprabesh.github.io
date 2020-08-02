@@ -50,7 +50,7 @@ export default function ProminentAppBar() {
           <Typography className={classes.title} variant="p" noWrap>
             © <Time value={now} format="YYYY" /> - Prabesh Humagain
           </Typography>
-          <Button aria-label="GitHub" color="inherit" href="https://github.com/hprabesh/h-prabesh" target="_blank"  variant="p"><GitHubIcon className={classes.icon} /></Button>
+          <Button aria-label="GitHub" color="inherit" href="https://github.com/hprabesh/prabesh-humagain" target="_blank"  variant="p"><GitHubIcon className={classes.icon} /></Button>
         </Toolbar>
       </AppBar>
     </div>
