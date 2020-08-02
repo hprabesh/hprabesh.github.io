@@ -26,9 +26,10 @@ export default function Home(){
     return(
         <React.Fragment>
             <WhiteTextTypography variant="h5" className={classes.root}>
+               
                 <Typewriter
                 options={{
-                    strings: ['Hi There!', 'It\'s me Prabesh Humagain','Web Developer'],
+                    strings: ['Hi There!', 'This Site is Under Construction','Thank you for awaiting'],
                     autoStart: true,
                     loop: true,
                 }}
