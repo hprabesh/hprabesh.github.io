@@ -16,8 +16,6 @@ const useStyles = makeStyles((theme) => ({
     marginLeft:`${theme.spacing(30)}px auto`,
     padding: theme.spacing(0),
     background:'transparent',
-    
-    
   },
   menuButton: {
     marginRight: theme.spacing(2),
