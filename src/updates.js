@@ -58,7 +58,7 @@ export default function RecipeReviewCard() {
       />
       <CardMedia
         className={classes.media}
-        image="/images/update.png"
+        image={require('./images/update.jpg')}
         title="Site Update"
         // color="white"
       />
