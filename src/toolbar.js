@@ -7,15 +7,24 @@ import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-
-
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-
 import MoreIcon from '@material-ui/icons/MoreVert';
 import clsx from 'clsx';
 import HomeIcon from '@material-ui/icons/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import About from './about';
+import Photos from './photos';
+import Projects from './projects';
+import Body from './body';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -86,13 +95,8 @@ export default function PrimarySearchAppBar() {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-
-
-
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -107,8 +111,6 @@ export default function PrimarySearchAppBar() {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
-
-
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -120,7 +122,7 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-        Hey
+        Prabesh
     </Menu>
   );
 
@@ -163,48 +165,49 @@ export default function PrimarySearchAppBar() {
   );
 
   return (
+    <Router>
     <div className={classes.grow}>
       <AppBar position="static" style={{backgroundColor:'transparent'}} className={clsx(classes.appBar)}>
             <Toolbar>
                 <Typography className={classes.title} variant="h6">
                 
-                    
                 </Typography>
             
                 <div className={classes.grow} />
                 <div className={classes.sectionDesktop}>
-                    <MenuItem>
-                        <IconButton aria-label="show 4 new mails" color="inherit" classes={{ label: classes.iconButton }}>
-                            <Badge  color="secondary">
-                                <HomeIcon />
-                            </Badge>
-                        </IconButton>
-                        <Typography variant="caption">HOME</Typography>
-                    </MenuItem>
-                    <MenuItem>
-                        <IconButton aria-label="Projects" color="inherit">
-                            <Badge>
-                                <AccountTreeIcon/>
-                            </Badge>
-                        </IconButton>
-                        <p>Projects</p>
-                    </MenuItem>
-                    <MenuItem>
-                        <IconButton aria-label="Photos" color="inherit">
-                            <Badge>
-                                <PhotoLibraryIcon/>
-                            </Badge>
-                        </IconButton>
-                        <p >Photos</p>
-                    </MenuItem>
-                    <MenuItem>
-                        <IconButton aria-label="About Me" color="inherit">
-                            <Badge color="inherit">
-                                <PersonPinIcon />
-                            </Badge>
-                        </IconButton>
-                        <p>About Me</p>
-                    </MenuItem>
+                    
+                      <MenuItem component={Link} to="/">
+                            <IconButton color="inherit" classes={{ label: classes.iconButton }}>
+                                <Badge  color="secondary">
+                                    <HomeIcon />
+                                </Badge>
+                            </IconButton>
+                            <Typography variant="caption">HOME</Typography>
+                      </MenuItem>
+                      <MenuItem component={Link} to="/projects">
+                          <IconButton aria-label="Projects" color="inherit">
+                              <Badge>
+                                  <AccountTreeIcon/>
+                              </Badge>
+                          </IconButton>
+                          <p>Projects</p>
+                      </MenuItem>
+                      <MenuItem component={Link} to="/">
+                          <IconButton aria-label="Photos" color="inherit">
+                              <Badge>
+                                  <PhotoLibraryIcon/>
+                              </Badge>
+                          </IconButton>
+                          <p >Photos</p>
+                      </MenuItem>
+                      <MenuItem component={Link} to="/">
+                          <IconButton aria-label="About Me" color="inherit">
+                              <Badge color="inherit">
+                                  <PersonPinIcon />
+                              </Badge>
+                          </IconButton>
+                          <p>About Me</p>
+                      </MenuItem>
                 </div>
                 <div className={classes.sectionMobile}>
                     <IconButton
@@ -213,16 +216,29 @@ export default function PrimarySearchAppBar() {
                         aria-haspopup="true"
                         onClick={handleMobileMenuOpen}
                         color="inherit"
-                        
                     >
                         <MoreIcon />
-                        
                     </IconButton>
                 </div>
             </Toolbar>
         </AppBar>
     {renderMobileMenu}
     {renderMenu}
+    <Switch>
+      <Route exact path="/">
+        <Body/>
+      </Route>
+      <Route path="/projects">
+          <Projects/>
+      </Route>
+      <Route path="/about">
+          <About/>
+      </Route>
+      <Route path="/photos">
+          <Photos/>
+      </Route>
+    </Switch>
     </div>
+    </Router>
   );
-}
+};
