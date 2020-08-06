@@ -29,7 +29,7 @@ export default function CustomizedTimeline() {
     <Timeline align="alternate">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Prabesh Humagain - Projects</title>
+        <title>𝓟𝓗 - 𝓟𝓻𝓪𝓫𝓮𝓼𝓱 𝓗𝓾𝓶𝓪𝓰𝓪𝓲𝓷 - Projects</title>
       </Helmet>
       <TimelineItem>
         <TimelineOppositeContent>
