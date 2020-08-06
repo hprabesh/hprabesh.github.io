@@ -12,7 +12,7 @@ import HotelIcon from '@material-ui/icons/Hotel';
 import RepeatIcon from '@material-ui/icons/Repeat';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-
+import Helmet from 'react-helmet';
 const useStyles = makeStyles((theme) => ({
   paper: {
     padding: '10px 16px',
@@ -27,6 +27,10 @@ export default function CustomizedTimeline() {
 
   return (
     <Timeline align="alternate">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Prabesh Humagain - Projects</title>
+      </Helmet>
       <TimelineItem>
         <TimelineOppositeContent>
           <Typography variant="body2" color="textSecondary">

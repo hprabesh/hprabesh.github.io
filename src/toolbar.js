@@ -122,55 +122,66 @@ export default function PrimarySearchAppBar() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-        Prabesh
     </Menu>
   );
 
   const mobileMenuId = 'primary-search-account-menu-mobile';
   const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem>
-        <IconButton aria-label="Projects" >
-          <Badge>
-            <AccountTreeIcon/>
+    <Router>
+
+      <Menu
+        anchorEl={mobileMoreAnchorEl}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+        id={mobileMenuId}
+        keepMounted
+        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
+        open={isMobileMenuOpen}
+        onClose={handleMobileMenuClose}
+      >
+      <MenuItem component={Link} to="/">
+        <IconButton color="inherit" classes={{ label: classes.iconButton }}>
+        <Badge  color="secondary">
+          <HomeIcon />
           </Badge>
         </IconButton>
-        <p>Projects</p>
+        <Typography variant="caption">HOME</Typography>
       </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="Photos">
-          <Badge>
-              <PhotoLibraryIcon/>
-          </Badge>
-        </IconButton>
-        <p >Photos</p>
-      </MenuItem>
-      <MenuItem>
-            <IconButton aria-label="About Me">
-                <Badge >
-                    <PersonPinIcon />
-                </Badge>
-            </IconButton>
-            <p>About Me</p>
+        <MenuItem component={Link} to="/projects">
+          <IconButton aria-label="Projects" >
+            <Badge>
+              <AccountTreeIcon/>
+            </Badge>
+          </IconButton>
+          <p>Projects</p>
         </MenuItem>
-    </Menu>
+        <MenuItem component={Link} to="/">
+          <IconButton aria-label="Photos">
+            <Badge>
+                <PhotoLibraryIcon/>
+            </Badge>
+          </IconButton>
+          <p >Photos</p>
+        </MenuItem>
+        <MenuItem component={Link} to="/">
+              <IconButton aria-label="About Me">
+                  <Badge >
+                      <PersonPinIcon />
+                  </Badge>
+              </IconButton>
+              <p>About Me</p>
+          </MenuItem>
+      </Menu>
+
+    </Router>
   );
 
   return (
+      <div className={classes.grow}>
     <Router>
-    <div className={classes.grow}>
       <AppBar position="static" style={{backgroundColor:'transparent'}} className={clsx(classes.appBar)}>
             <Toolbar>
                 <Typography className={classes.title} variant="h6">
-                
+                  Prabesh
                 </Typography>
             
                 <div className={classes.grow} />
@@ -222,8 +233,8 @@ export default function PrimarySearchAppBar() {
                 </div>
             </Toolbar>
         </AppBar>
-    {renderMobileMenu}
-    {renderMenu}
+        {renderMobileMenu}
+        {renderMenu}
     <Switch>
       <Route exact path="/">
         <Body/>
@@ -238,7 +249,8 @@ export default function PrimarySearchAppBar() {
           <Photos/>
       </Route>
     </Switch>
-    </div>
     </Router>
+        
+    </div>
   );
 };
