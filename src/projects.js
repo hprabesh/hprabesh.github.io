@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.secondary.main,
   },
   timeline:{
-    paddingTop:'25px',
+    paddingRight:'25%',
+    paddingLeft:'15%'
   }
 }));
 
@@ -56,7 +57,7 @@ export default function CustomizedTimeline() {
           </TimelineSeparator>
           <TimelineContent>
             <Paper elevation={3} className={classes.paper}>
-              <Typography>A web-project built using ReactJS, Express, and MongoDB that monitors the daily performance level and would help improve the efficiency based on the level of different priorities of tasks completed </Typography>
+              <Typography>A web-project built using ReactJS, Express, and Mongoose that keeps the record of the pending and completed tasks to monitor the daily performance level which would help improve the efficiency level </Typography>
             </Paper>
             <br/>
           </TimelineContent>
