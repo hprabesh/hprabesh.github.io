@@ -30,7 +30,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     alignSelf: 'justify',
-    marginRight:10
+    marginRight:5,
+    paddingTop:12,
   },
   AppBar:{
     border:2,
@@ -59,12 +60,12 @@ export default function ProminentAppBar() {
     <div className={classes.root}>
       <AppBar position="static" className={classes.AppBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Let's Connect:
+          <Typography className={classes.title} variant="strong" noWrap>
+            <strong>Let's Connect</strong>:
           </Typography>
-          <Button aria-label="search" color="inherit" href="https://github.com/hprabesh" target="_blank"  classes={{ root: classes.button, label: classes.label }} variant="text"><GitHubIcon className={classes.icon}/>GitHub</Button>
-          <Button aria-label="display more actions" href="https://www.linkedin.com/in/hprabesh" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><LinkedInIcon className={classes.icon}/>LinkedIn</Button>
-          <Button aria-label="display more actions" href="https://www.instagram.com/prab3ssss/" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><InstagramIcon className={classes.icon}/>Instagram</Button>
+          <Button aria-label="GitHub" color="inherit" href="https://github.com/hprabesh" target="_blank"  classes={{ root: classes.button, label: classes.label }} variant="text"><GitHubIcon className={classes.icon}/><strong>GitHub</strong></Button>
+          <Button aria-label="LinkedIn" href="https://www.linkedin.com/in/hprabesh" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><LinkedInIcon className={classes.icon}/><strong>LinkedIn</strong></Button>
+          <Button aria-label="Instagram" href="https://www.instagram.com/prab3ssss/" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><InstagramIcon className={classes.icon}/><strong>Instagram</strong></Button> 
         </Toolbar>
       </AppBar>
     </div>
