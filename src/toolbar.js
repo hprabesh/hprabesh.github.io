@@ -203,7 +203,7 @@ export default function PrimarySearchAppBar() {
                           </IconButton>
                           <p>Projects</p>
                       </MenuItem>
-                      <MenuItem component={Link} to="/">
+                      <MenuItem component={Link} to="/photos">
                           <IconButton aria-label="Photos" color="inherit">
                               <Badge>
                                   <PhotoLibraryIcon/>
