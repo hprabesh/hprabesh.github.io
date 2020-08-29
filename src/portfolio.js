@@ -23,10 +23,10 @@ export default function CustomizedTimeline() {
     <div>
         <Helmet>
           <meta charSet="utf-8" />
-          <title>Prabesh Humagain - Photos</title>
+          <title>Prabesh Humagain - Portfolio</title>
         </Helmet>
       <Typography style={{color:'white',fontWeight:'bold',paddingTop:'25px'}} variant="h6" component="h1" align="center">
-        Photos
+        Portfolio
       </Typography>
     </div>
   );

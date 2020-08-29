@@ -21,7 +21,7 @@ import {
 } from "react-router-dom";
 
 import About from './about';
-import Photos from './photos';
+import Portfolio from './portfolio';
 import Projects from './projects';
 import Body from './body';
 
@@ -155,12 +155,12 @@ export default function PrimarySearchAppBar() {
           <p>Projects</p>
         </MenuItem>
         <MenuItem component={Link} to="/">
-          <IconButton aria-label="Photos">
+          <IconButton aria-label="Portfolio">
             <Badge>
                 <PhotoLibraryIcon/>
             </Badge>
           </IconButton>
-          <p >Photos</p>
+          <p >Portfolio</p>
         </MenuItem>
         <MenuItem component={Link} to="/">
               <IconButton aria-label="About Me">
@@ -203,13 +203,13 @@ export default function PrimarySearchAppBar() {
                           </IconButton>
                           <p>Projects</p>
                       </MenuItem>
-                      <MenuItem component={Link} to="/photos">
-                          <IconButton aria-label="Photos" color="inherit">
+                      <MenuItem component={Link} to="/portfolio">
+                          <IconButton aria-label="Portfolio" color="inherit">
                               <Badge>
                                   <PhotoLibraryIcon/>
                               </Badge>
                           </IconButton>
-                          <p >Photos</p>
+                          <p >Portfolio</p>
                       </MenuItem>
                       <MenuItem component={Link} to="/">
                           <IconButton aria-label="About Me" color="inherit">
@@ -245,8 +245,8 @@ export default function PrimarySearchAppBar() {
       <Route path="/about">
           <About/>
       </Route>
-      <Route path="/photos">
-          <Photos/>
+      <Route path="/portfolio">
+          <Portfolio/>
       </Route>
     </Switch>
     </Router>

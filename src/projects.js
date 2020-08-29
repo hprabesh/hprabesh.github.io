@@ -65,7 +65,7 @@ export default function CustomizedTimeline() {
         <TimelineItem>
         <TimelineOppositeContent>
             <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
-              Deans Engineering Challenge for Smart City
+              Deans Engineering Challenge
             </Typography>
             <div style={{color:'white',paddingTop:'12px'}}>
             (Spring 2020)
