@@ -29,7 +29,7 @@ export default function Home(){
                
                 <Typewriter
                 options={{
-                    strings: ['Hi There!', 'This\'s Prabesh Humagain','Currently, I am updating the site','Thank you for visiting it'],
+                    strings: ['Site under construction!!!!!!'],
                     autoStart: true,
                     loop: true,
                 }}
