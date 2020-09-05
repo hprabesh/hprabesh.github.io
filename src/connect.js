@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   menuButton: {
     marginRight: theme.spacing(2),
+    
   },
   toolbar: {
     minHeight: 40,
@@ -49,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     fontSize: '20px !important',
     marginBottom: theme.spacing.unit
+  },
+  button:{
+    
   }
   
 }));
