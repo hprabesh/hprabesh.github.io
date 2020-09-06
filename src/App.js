@@ -11,7 +11,7 @@ function App() {
     <React.Fragment>
       <Helmet>
           <meta charSet="utf-8" />
-          <title>Prabesh Humagain - Home</title>
+          <title>Prabesh Humagain - TEST</title>
       </Helmet>
 
       <Toolbar/>
