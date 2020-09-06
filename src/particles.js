@@ -7,19 +7,20 @@ export default () => (
       position: "absolute",
       top: 80,
       right: "20%",
-      bottom:0,
+      bottom:-80,
       width:"100%",
-      // height: "100%"
+
+      // height: "200%"
     }}
   >
     <Particles
       params={{
         particles: {
           number: {
-            value: 70,
+            value: 75,
             density: {
               enable: true,
-              value_area: 1803.4120608655228
+              value_area: 1903.4120608655228
             }
           },
           move: {
@@ -32,8 +33,8 @@ export default () => (
             bounce: false,
             attract: {
               enable: false,
-              rotateX: 600,
-              rotateY: 1200
+              rotateX: 500,
+              rotateY: 1000
             }
           }
         },
