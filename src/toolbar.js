@@ -24,6 +24,7 @@ import About from './about';
 import Portfolio from './portfolio';
 import Projects from './projects';
 import Body from './body';
+import './toolbar';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -89,6 +90,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column"
   },
+  
 }));
 
 export default function PrimarySearchAppBar() {
@@ -138,9 +140,9 @@ export default function PrimarySearchAppBar() {
         open={isMobileMenuOpen}
         onClose={handleMobileMenuClose}
       >
-      <MenuItem component={Link} to="/">
+      <MenuItem component={Link} to="/" >
         <IconButton color="inherit" classes={{ label: classes.iconButton }}>
-        <Badge  color="secondary">
+        <Badge color="secondary">
           <HomeIcon />
           </Badge>
         </IconButton>
@@ -193,7 +195,7 @@ export default function PrimarySearchAppBar() {
                                     <HomeIcon />
                                 </Badge>
                             </IconButton>
-                            <Typography variant="caption">HOME</Typography>
+                            <Typography variant="caption" >HOME</Typography>
                       </MenuItem>
                       <MenuItem component={Link} to="/projects">
                           <IconButton aria-label="Projects" color="inherit">
