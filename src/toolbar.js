@@ -17,6 +17,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+  NavLink,
   Link
 } from "react-router-dom";
 
@@ -24,7 +25,7 @@ import About from './about';
 import Portfolio from './portfolio';
 import Projects from './projects';
 import Body from './body';
-import './toolbar';
+import './css/toolbar-router.css';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -92,6 +93,8 @@ const useStyles = makeStyles((theme) => ({
   },
   
 }));
+
+
 
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
@@ -189,15 +192,19 @@ export default function PrimarySearchAppBar() {
                 <div className={classes.grow} />
                 <div className={classes.sectionDesktop}>
                     
-                      <MenuItem component={Link} to="/">
+                      <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+                      <MenuItem>
                             <IconButton color="inherit" classes={{ label: classes.iconButton }}>
                                 <Badge  color="secondary">
                                     <HomeIcon />
                                 </Badge>
                             </IconButton>
-                            <Typography variant="caption" >HOME</Typography>
+                            <p variant="caption" >Home</p>
                       </MenuItem>
-                      <MenuItem component={Link} to="/projects">
+                      </NavLink>
+                      <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+                      
+                      <MenuItem>
                           <IconButton aria-label="Projects" color="inherit">
                               <Badge>
                                   <AccountTreeIcon/>
@@ -205,7 +212,10 @@ export default function PrimarySearchAppBar() {
                           </IconButton>
                           <p>Projects</p>
                       </MenuItem>
-                      <MenuItem component={Link} to="/portfolio">
+                      </NavLink>
+                      <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+                      
+                      <MenuItem>
                           <IconButton aria-label="Portfolio" color="inherit">
                               <Badge>
                                   <PhotoLibraryIcon/>
@@ -213,7 +223,9 @@ export default function PrimarySearchAppBar() {
                           </IconButton>
                           <p >Portfolio</p>
                       </MenuItem>
-                      <MenuItem component={Link} to="/">
+                      </NavLink>
+                      <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+                      <MenuItem>
                           <IconButton aria-label="About Me" color="inherit">
                               <Badge color="inherit">
                                   <PersonPinIcon />
@@ -221,6 +233,7 @@ export default function PrimarySearchAppBar() {
                           </IconButton>
                           <p>About Me</p>
                       </MenuItem>
+                      </NavLink>
                 </div>
                 <div className={classes.sectionMobile}>
                     <IconButton
