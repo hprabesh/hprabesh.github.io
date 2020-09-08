@@ -36,7 +36,8 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create(['margin', 'width'], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
-    }),  
+    }),
+    width:'100%'  
   },
   grow: {
     flexGrow: 1,
@@ -61,10 +62,19 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(0, 3),
     },
   },
+  sectionDesktopTitle:{
+    display: 'none',
+    [theme.breakpoints.up('sm')]: {
+      display: 'flex',
+      padding: theme.spacing(0, 3),
+    },
+    
+  },
+
   sectionMobile: {
     display: 'flex',
     [theme.breakpoints.up('md')]: {
-      display: 'none',
+      display: 'flex',
     },
   },
   large: {
@@ -85,17 +95,19 @@ export default function PrimarySearchAppBar() {
   return (
       <div className={classes.grow}>
     <Router>
-      <AppBar position="static" style={{backgroundColor:'transparent'}} className={clsx(classes.appBar)}>
+      <AppBar position="static" style={{backgroundColor:'transparent',paddingRight:'5px'}} className={clsx(classes.appBar)}>
         <Toolbar>
+        <div className={classes.sectionDesktopTitle}>
           <Typography className={classes.title} variant="h6">
-              H.<br/>Prabesh
+              Prabesh Humagain
           </Typography>
+          </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
-                    <Badge  color="secondary">
+                    <Badge color="secondary">
                         <HomeIcon />
                     </Badge>
                 </IconButton>
@@ -137,7 +149,7 @@ export default function PrimarySearchAppBar() {
             <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
-                  <Badge  color="secondary">
+                  <Badge color="secondary">
                     <HomeIcon />
                   </Badge>
                 </IconButton>
