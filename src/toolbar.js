@@ -88,7 +88,7 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{backgroundColor:'transparent'}} className={clsx(classes.appBar)}>
         <Toolbar>
           <Typography className={classes.title} variant="h6">
-              Prabesh Humagain
+              H.<br/>Prabesh
           </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
