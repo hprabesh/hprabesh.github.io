@@ -6,19 +6,16 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
-import Menu from '@material-ui/core/Menu';
 import AccountTreeIcon from '@material-ui/icons/AccountTree';
 import PersonPinIcon from '@material-ui/icons/PersonPin';
 import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
-import MoreIcon from '@material-ui/icons/MoreVert';
 import clsx from 'clsx';
 import HomeIcon from '@material-ui/icons/Home';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  NavLink,
-  Link
+  NavLink
 } from "react-router-dom";
 
 import About from './about';
@@ -39,9 +36,8 @@ const useStyles = makeStyles((theme) => ({
     transition: theme.transitions.create(['margin', 'width'], {
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.leavingScreen,
-    }),
-    
-    },
+    }),  
+  },
   grow: {
     flexGrow: 1,
   },
@@ -57,16 +53,6 @@ const useStyles = makeStyles((theme) => ({
   
   inputRoot: {
     color: 'inherit',
-  },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create('width'),
-    width: '100%',
-    [theme.breakpoints.up('md')]: {
-      width: '100%',
-    },
   },
   sectionDesktop: {
     display: 'none',
@@ -93,163 +79,100 @@ const useStyles = makeStyles((theme) => ({
   },
   
 }));
-
-
-
 export default function PrimarySearchAppBar() {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-  const isMenuOpen = Boolean(anchorEl);
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = 'primary-search-account-menu';
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-    </Menu>
-  );
-
-  const mobileMenuId = 'primary-search-account-menu-mobile';
-  const renderMobileMenu = (
-    <Router>
-
-      <Menu
-        anchorEl={mobileMoreAnchorEl}
-        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
-        id={mobileMenuId}
-        keepMounted
-        transformOrigin={{ vertical: 'top', horizontal: 'right' }}
-        open={isMobileMenuOpen}
-        onClose={handleMobileMenuClose}
-      >
-      <MenuItem component={Link} to="/" >
-        <IconButton color="inherit" classes={{ label: classes.iconButton }}>
-        <Badge color="secondary">
-          <HomeIcon />
-          </Badge>
-        </IconButton>
-        <Typography variant="caption">HOME</Typography>
-      </MenuItem>
-        <MenuItem component={Link} to="/projects">
-          <IconButton aria-label="Projects" >
-            <Badge>
-              <AccountTreeIcon/>
-            </Badge>
-          </IconButton>
-          <p>Projects</p>
-        </MenuItem>
-        <MenuItem component={Link} to="/">
-          <IconButton aria-label="Portfolio">
-            <Badge>
-                <PhotoLibraryIcon/>
-            </Badge>
-          </IconButton>
-          <p >Portfolio</p>
-        </MenuItem>
-        <MenuItem component={Link} to="/">
-              <IconButton aria-label="About Me">
-                  <Badge >
-                      <PersonPinIcon />
-                  </Badge>
-              </IconButton>
-              <p>About Me</p>
-          </MenuItem>
-      </Menu>
-
-    </Router>
-  );
 
   return (
       <div className={classes.grow}>
     <Router>
       <AppBar position="static" style={{backgroundColor:'transparent'}} className={clsx(classes.appBar)}>
-            <Toolbar>
-                <Typography className={classes.title} variant="h6">
-                    Prabesh Humagain
-                </Typography>
-            
-                <div className={classes.grow} />
-                <div className={classes.sectionDesktop}>
-                    
-                      <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
-                      <MenuItem>
-                            <IconButton color="inherit" classes={{ label: classes.iconButton }}>
-                                <Badge  color="secondary">
-                                    <HomeIcon />
-                                </Badge>
-                            </IconButton>
-                            <p variant="caption" >Home</p>
-                      </MenuItem>
-                      </NavLink>
-                      <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
-                      
-                      <MenuItem>
-                          <IconButton aria-label="Projects" color="inherit">
-                              <Badge>
-                                  <AccountTreeIcon/>
-                              </Badge>
-                          </IconButton>
-                          <p>Projects</p>
-                      </MenuItem>
-                      </NavLink>
-                      <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
-                      
-                      <MenuItem>
-                          <IconButton aria-label="Portfolio" color="inherit">
-                              <Badge>
-                                  <PhotoLibraryIcon/>
-                              </Badge>
-                          </IconButton>
-                          <p >Portfolio</p>
-                      </MenuItem>
-                      </NavLink>
-                      <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
-                      <MenuItem>
-                          <IconButton aria-label="About Me" color="inherit">
-                              <Badge color="inherit">
-                                  <PersonPinIcon />
-                              </Badge>
-                          </IconButton>
-                          <p>About Me</p>
-                      </MenuItem>
-                      </NavLink>
-                </div>
-                <div className={classes.sectionMobile}>
-                    <IconButton
-                        aria-label="show more"
-                        aria-controls={mobileMenuId}
-                        aria-haspopup="true"
-                        onClick={handleMobileMenuOpen}
-                        color="inherit"
-                    >
-                        <MoreIcon />
-                    </IconButton>
-                </div>
-            </Toolbar>
-        </AppBar>
-        {renderMobileMenu}
-        {renderMenu}
+        <Toolbar>
+          <Typography className={classes.title} variant="h6">
+              Prabesh Humagain
+          </Typography>
+          <div className={classes.grow} />
+          <div className={classes.sectionDesktop}>
+            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton color="inherit" classes={{ label: classes.iconButton }}>
+                    <Badge  color="secondary">
+                        <HomeIcon />
+                    </Badge>
+                </IconButton>
+                <p variant="caption" >Home</p>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="Projects" color="inherit">
+                    <Badge>
+                        <AccountTreeIcon/>
+                    </Badge>
+                </IconButton>
+                <p>Projects</p>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="Portfolio" color="inherit">
+                  <Badge>
+                    <PhotoLibraryIcon/>
+                  </Badge>
+                </IconButton>
+                <p >Portfolio</p>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="About Me" color="inherit">
+                  <Badge color="inherit">
+                    <PersonPinIcon />
+                  </Badge>
+                </IconButton>
+                <p>About Me</p>
+              </MenuItem>
+            </NavLink>
+          </div>
+          <div className={classes.sectionMobile}>
+            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton color="inherit" classes={{ label: classes.iconButton }}>
+                  <Badge  color="secondary">
+                    <HomeIcon />
+                  </Badge>
+                </IconButton>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="Projects" color="inherit">
+                  <Badge>
+                    <AccountTreeIcon/>
+                  </Badge>
+                </IconButton>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="Portfolio" color="inherit">
+                  <Badge>
+                    <PhotoLibraryIcon/>
+                  </Badge>
+                </IconButton>
+              </MenuItem>
+            </NavLink>
+            <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+              <MenuItem>
+                <IconButton aria-label="About Me" color="inherit">
+                  <Badge color="inherit">
+                    <PersonPinIcon />
+                  </Badge>
+                </IconButton>
+              </MenuItem>
+            </NavLink>
+          </div>
+        </Toolbar>
+      </AppBar>
     <Switch>
       <Route exact path="/">
         <Body/>
