@@ -7,13 +7,14 @@
     left:9px;
     background-color:#1e2130;
     border:2px hidden #444444;
-    border-block-start-color: #CFD8DC;
+    border-block-start-color: #7b898f;
     border-block-start-width: 0.3ch;
-    border-block-start-style: double;
-    border-block-end-color: #CFD8DC;
+    border-block-start-style: solid;
+    border-block-end-color: #7b898f;
     border-block-end-width: 0.3ch;
-    border-block-end-style: double;
+    border-block-end-style: dashed;
     border-radius:5px;
+    color:#c5dcf5;
     /* box-shadow: 2px;  */
   }
 
