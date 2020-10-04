@@ -20,28 +20,29 @@ const useStyles = makeStyles((theme) => ({
   secondaryTail: {
     backgroundColor: theme.palette.secondary.main,
   },
-  timeline:{
-    paddingRight:'25%',
-    paddingLeft:'15%'
-  },
+  // timeline:{
+  //   paddingRight:'25%',
+  //   paddingLeft:'15%'
+  // },
   sectionDesktop: {
     display: 'none',
     [theme.breakpoints.up('md')]: {
       display: 'flex',
-      padding: theme.spacing(0, 3),
+      padding: theme.spacing(0, 1),
     },
   },
   sectionDesktopTitle:{
     display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'flex',
-      padding: theme.spacing(0, 3),
+      padding: theme.spacing(0, 1),
     },
   },
   sectionMobile: {
-    display: 'flex',
+    display: 'left',
     [theme.breakpoints.up('md')]: {
       display: 'none',
+      padding: theme.spacing(0, 1),
     },
   },
 }));
@@ -59,12 +60,7 @@ export default function CustomizedTimeline() {
         <Timeline align="alternate" className={classes.timeline}>
           <TimelineItem>
             <TimelineOppositeContent>
-              <Typography style={{color:'white',fontWeight:'bold'}}  variant="h5" component="h1">
-                eLive             
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Summer 2020)
-              </div>
+              
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary">
@@ -73,7 +69,13 @@ export default function CustomizedTimeline() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-              <Paper elevation={3} className={classes.paper}>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h5" component="h1">
+                Performance Tracker             
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Summer 2020) <br/>
+              </div>
+              <Paper elevation={4} className={classes.paper}>
                 <Typography>A web-project built using ReactJS, Express, and Mongoose that keeps the record of the pending and completed tasks to monitor the daily performance level which would help improve the efficiency level </Typography>
               </Paper>
               <br/>
@@ -81,12 +83,6 @@ export default function CustomizedTimeline() {
           </TimelineItem>
           <TimelineItem>
           <TimelineOppositeContent>
-              <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
-                Deans Engineering Challenge
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Spring 2020)
-              </div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" variant="outlined">
@@ -95,6 +91,12 @@ export default function CustomizedTimeline() {
               <TimelineConnector className={classes.secondaryTail} />
             </TimelineSeparator>
             <TimelineContent>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
+                Deans Engineering Challenge
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Spring 2020)
+              </div>
               <Paper elevation={3} className={classes.paper}>
                 <Typography align="left">A Python (TensorFlow) project that uses Artificial Neural Network Model of 3 layers to predict the amount of radiation incident in Arlington Region to analyze the feasibility of hybrid structure of solar panel and windmill as an 
                     alternative source of energy with the goal to make Arlington an smart city.<br/><br/>For our project, we received an honorable mentioning in the <strong>Deans Engineering Challenge </strong> competition.</Typography>
@@ -104,12 +106,7 @@ export default function CustomizedTimeline() {
           </TimelineItem>
           <TimelineItem>
           <TimelineOppositeContent>
-              <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
-                Weather-Wiz
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Fall 2019)
-              </div>
+             
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
@@ -117,6 +114,12 @@ export default function CustomizedTimeline() {
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
+                Weather-Wiz
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Fall 2019)
+              </div>
               <Paper elevation={3} className={classes.paper}>
                 <Typography>
                   It's a Python project built using Requests, BeautifulSoup, Matplotlib and Pandas libraries, to create the database of weather info of Arlington scrapped off the site from the past 20 years to analyze the weather change in Arlington,TX region. 
@@ -129,14 +132,6 @@ export default function CustomizedTimeline() {
       <div className={classes.sectionMobile}>
       <Timeline>
       <TimelineItem>
-            <TimelineOppositeContent>
-              <Typography style={{color:'white',fontWeight:'bold'}}  variant="h5" component="h1">
-                eLive             
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Summer 2020)
-              </div>
-            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary">
                 <LaptopMacIcon />
@@ -144,6 +139,12 @@ export default function CustomizedTimeline() {
               <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h5" component="h1">
+                Performance Tracker             
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Summer 2020)
+              </div>
               <Paper elevation={3} className={classes.paper}>
                 <Typography>A web-project built using ReactJS, Express, and Mongoose that keeps the record of the pending and completed tasks to monitor the daily performance level which would help improve the efficiency level </Typography>
               </Paper>
@@ -151,14 +152,6 @@ export default function CustomizedTimeline() {
             </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-      <TimelineOppositeContent>
-      <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
-                Deans Engineering Challenge
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Spring 2020)
-              </div>
-            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="primary" variant="outlined">
                 <HotelIcon />
@@ -166,6 +159,12 @@ export default function CustomizedTimeline() {
               <TimelineConnector className={classes.secondaryTail} />
             </TimelineSeparator>
             <TimelineContent>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
+                Deans Engineering Challenge
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Spring 2020)
+              </div>
             <Paper elevation={3} className={classes.paper}>
                 <Typography align="left">A Python (TensorFlow) project that uses Artificial Neural Network Model of 3 layers to predict the amount of radiation incident in Arlington Region to analyze the feasibility of hybrid structure of solar panel and windmill as an 
                     alternative source of energy with the goal to make Arlington an smart city.<br/><br/>For our project, we received an honorable mentioning in the <strong>Deans Engineering Challenge </strong> competition.</Typography>
@@ -174,14 +173,6 @@ export default function CustomizedTimeline() {
             </TimelineContent>
       </TimelineItem>
       <TimelineItem>
-      <TimelineOppositeContent>
-      <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
-                Weather-Wiz
-              </Typography>
-              <div style={{color:'white',paddingTop:'12px'}}>
-              (Fall 2019)
-              </div>
-            </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot color="secondary">
               <RepeatIcon />
@@ -189,6 +180,12 @@ export default function CustomizedTimeline() {
               </TimelineDot>
             </TimelineSeparator>
             <TimelineContent>
+            <Typography style={{color:'white',fontWeight:'bold'}}  variant="h6" component="h1">
+                Weather-Wiz
+              </Typography>
+              <div style={{color:'white',paddingTop:'12px'}}>
+              (Fall 2019)
+              </div>
             <Paper elevation={3} className={classes.paper}>
                 <Typography>
                   It's a Python project built using Requests, BeautifulSoup, Matplotlib and Pandas libraries, to create the database of weather info of Arlington scrapped off the site from the past 20 years to analyze the weather change in Arlington,TX region. 

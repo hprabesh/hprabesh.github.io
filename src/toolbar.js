@@ -62,6 +62,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('md')]: {
       display: 'flex',
       padding: theme.spacing(0, 3),
+      alignItems:'flex-start',
     },
   },
   sectionDesktopTitle:{
@@ -74,6 +75,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   sectionMobile: {
+    alignItems:'flex-start',
     display: 'flex',
     [theme.breakpoints.up('md')]: {
       display: 'none',
@@ -195,7 +197,7 @@ export default function PrimarySearchAppBar() {
       </Route>
       <Route path="/projects">
           <Box p={-5} ml={25} mr={25} mt={8} id="div2">
-          <Projects/>
+            <Projects/>
           </Box>
       </Route>
       <Route path="/about">
