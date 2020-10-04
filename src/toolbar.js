@@ -100,12 +100,11 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{backgroundColor:'transparent',paddingRight:'5px'}} className={clsx(classes.appBar)}>
         <Toolbar>
         <div className={classes.sectionDesktopTitle}>
-          <Box  m={2} p={0.5} id="div1">
+        
             <Typography className={classes.title} variant="h6">
               Prabesh Humagain
             </Typography>
           
-          </Box>
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
@@ -195,7 +194,9 @@ export default function PrimarySearchAppBar() {
         <Body/>
       </Route>
       <Route path="/projects">
+          <Box p={-5} ml={25} mr={25} mt={8} id="div2">
           <Projects/>
+          </Box>
       </Route>
       <Route path="/about">
           <About/>
