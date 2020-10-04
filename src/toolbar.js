@@ -17,6 +17,8 @@ import {
   Route,
   NavLink
 } from "react-router-dom";
+import Box from '@material-ui/core/Box';
+
 
 import About from './about';
 import Portfolio from './portfolio';
@@ -98,9 +100,12 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{backgroundColor:'transparent',paddingRight:'5px'}} className={clsx(classes.appBar)}>
         <Toolbar>
         <div className={classes.sectionDesktopTitle}>
-          <Typography className={classes.title} variant="h6">
+          <Box  m={2} p={0.5} id="div1">
+            <Typography className={classes.title} variant="h6">
               Prabesh Humagain
-          </Typography>
+            </Typography>
+          
+          </Box>
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
@@ -134,7 +139,7 @@ export default function PrimarySearchAppBar() {
                 <p >Portfolio</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">
@@ -173,7 +178,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/sdas" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">

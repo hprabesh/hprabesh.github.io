@@ -2,6 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import Typography from '@material-ui/core/Typography';
 import { withStyles, makeStyles } from "@material-ui/core/styles";
+import Stars from './particles';
 const WhiteTextTypography = withStyles({
     root: {
       color: "#FFFFFF",
@@ -25,18 +26,18 @@ export default function Home(){
 
     return(
         <React.Fragment>
+            <Stars/>
             <WhiteTextTypography variant="h5" className={classes.root}>
-               
-                <Typewriter
-                options={{
-                    strings: ['Site under construction!!!!!!'],
-                    autoStart: true,
-                    loop: true,
-                }}
-                style={{
-                    padding:100,
-                }}
-                />
+              <Typewriter
+              options={{
+                  strings: ['Site under construction!!!!!!'],
+                  autoStart: true,
+                  loop: true,
+              }}
+              style={{
+                  padding:100,
+              }}
+              />
             </WhiteTextTypography>
         </React.Fragment>
     )

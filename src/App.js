@@ -1,11 +1,9 @@
 import React from 'react';
 import Toolbar from './toolbar';
-import Stars from './particles';
-// import Body from './body';
+
 import Connect from './connect';
 import Footer from './footer';
 import {Helmet} from "react-helmet";
-// import Updates from './updates';
 function App() {
   return (
     <React.Fragment>
@@ -15,9 +13,7 @@ function App() {
       </Helmet>
 
       <Toolbar/>
-      <Stars/>
-      {/* <Body/> */}
-      {/* <Updates/> */}
+
       <Connect/>
       <Footer/>
     </React.Fragment>
