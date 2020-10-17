@@ -114,7 +114,7 @@ export default function PrimarySearchAppBar() {
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
                     <Badge color="secondary">
@@ -124,7 +124,7 @@ export default function PrimarySearchAppBar() {
                 <p variant="caption" >Home</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/projects" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Projects" color="inherit">
                     <Badge>
@@ -134,7 +134,7 @@ export default function PrimarySearchAppBar() {
                 <p>Projects</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/portfolio" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Portfolio" color="inherit">
                   <Badge>
@@ -144,7 +144,7 @@ export default function PrimarySearchAppBar() {
                 <p >Portfolio</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">
@@ -156,7 +156,7 @@ export default function PrimarySearchAppBar() {
             </NavLink>
           </div>
           <div className={classes.sectionMobile}>
-            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
                   <Badge color="secondary">
@@ -165,7 +165,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/projects" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Projects" color="inherit">
                   <Badge>
@@ -174,7 +174,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/portfolio" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Portfolio" color="inherit">
                   <Badge>
@@ -183,7 +183,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">
