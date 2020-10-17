@@ -25,6 +25,7 @@ import Portfolio from './portfolio';
 import Projects from './projects';
 import Body from './body';
 import './css/toolbar-router.css';
+import Logo from './images/logo.svg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -102,9 +103,12 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{backgroundColor:'transparent',paddingRight:'5px'}} className={clsx(classes.appBar)}>
         <Toolbar>
         <div className={classes.sectionDesktopTitle}>
-        
+            
             <Typography className={classes.title} variant="h6">
-              Prabesh Humagain
+              <a href="/" title="Index Page">
+                <img src={Logo} alt="Logo" height="40px" />     
+              </a>
+                 
             </Typography>
           
           </div>
@@ -196,15 +200,17 @@ export default function PrimarySearchAppBar() {
         <Body/>
       </Route>
       <Route path="/projects">
-          <Box p={-5} ml={25} mr={25} mt={8} id="div2">
-            <Projects/>
-          </Box>
+        <Box p={-5} ml={25} mr={25} mt={8} id="div2">
+          <Projects/>
+        </Box>
       </Route>
       <Route path="/about">
           <About/>
       </Route>
       <Route path="/portfolio">
+        <Box p={-5} ml={25} mr={25} mt={8} id="div2">
           <Portfolio/>
+        </Box>
       </Route>
     </Switch>
     </Router>

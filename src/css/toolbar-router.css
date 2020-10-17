@@ -21,10 +21,10 @@
     width: fit-content;
     background-color:#1e2130;
     border:2px hidden #444444;
-    border-block-start-color: #f0ed30;
+    border-block-start-color: #f7f58b;
     border-block-start-width: 0.3ch;
     border-block-start-style: solid;
-    border-block-end-color: #f0ed30;
+    border-block-end-color: #f7f58b;
     border-block-end-width: 0.5ch;
     border-block-end-style: dashed;
     border-radius:5px;
@@ -32,4 +32,3 @@
     /* align-content: left; */
     /* box-shadow: 2px;  */
   }
-
