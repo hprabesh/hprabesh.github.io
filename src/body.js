@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import Typewriter from 'typewriter-effect';
 import Typography from '@material-ui/core/Typography';
 import { withStyles, makeStyles } from "@material-ui/core/styles";
 import Stars from './particles';
 import './css/toolbar-router.css';
 import Box from '@material-ui/core/Box';
+
 const WhiteTextTypography = withStyles({
     root: {
       color: "#FFFFFF",      
@@ -41,10 +42,24 @@ const WhiteTextTypography = withStyles({
       lineHeight:'39px',color:'#bbd4ee',
     }
   }));
+
  
+ 
+
 export default function Home(){
     const classes=useStyles();
+    const [currentDate, setCurrentDate] = useState('');
 
+    useEffect(() => {
+      var hours = new Date().getHours(); //Current Hours
+      if (hours>=12){
+        setCurrentDate(
+          "Good Afternoon"
+        );
+      } else {
+        setCurrentDate("Good Morning");
+      };
+    }, []);
     return(
         <React.Fragment>
             <Stars/>
@@ -52,12 +67,12 @@ export default function Home(){
               <WhiteTextTypography variant="h6" className={classes.normalText}>
               <Typewriter
                 onInit={(typewriter) => {
-                  typewriter.pauseFor(1200)
+                  typewriter.pauseFor(1800)
                     .deleteAll()
                     .start();
                 }}
                 options={{
-                  strings: ['Hi!','Namaste!'],
+                  strings: ['Hi!',{currentDate}.currentDate],
                   autoStart: true,
                   loop: true,
                 }}
