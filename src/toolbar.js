@@ -200,7 +200,7 @@ export default function PrimarySearchAppBar() {
         <Body/>
       </Route>
       <Route path="/projects">
-        <Box p={-5} ml={25} mr={25} mt={8} id="div2">
+        <Box p={'5%'} ml={'8%'} mr={'8%'} mt={'8%'} id="div2">
           <Projects/>
         </Box>
       </Route>
@@ -208,7 +208,7 @@ export default function PrimarySearchAppBar() {
           <About/>
       </Route>
       <Route path="/portfolio">
-        <Box p={-5} ml={25} mr={25} mt={8} id="div2">
+        <Box p={'5%'} ml={'8%'} mr={'8%'} mt={'8%'} id="div2">
           <Portfolio/>
         </Box>
       </Route>
