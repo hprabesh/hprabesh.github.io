@@ -25,6 +25,7 @@ import Portfolio from './portfolio';
 import Projects from './projects';
 import Body from './body';
 import './css/toolbar-router.css';
+import Logo from './images/logo.svg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -102,15 +103,18 @@ export default function PrimarySearchAppBar() {
       <AppBar position="static" style={{backgroundColor:'transparent',paddingRight:'5px'}} className={clsx(classes.appBar)}>
         <Toolbar>
         <div className={classes.sectionDesktopTitle}>
-        
+            
             <Typography className={classes.title} variant="h6">
-              Prabesh Humagain
+              <a href="/" title="Index Page">
+                <img src={Logo} alt="Logo" height="40px" />     
+              </a>
+                 
             </Typography>
           
           </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
                     <Badge color="secondary">
@@ -120,7 +124,7 @@ export default function PrimarySearchAppBar() {
                 <p variant="caption" >Home</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/projects" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Projects" color="inherit">
                     <Badge>
@@ -130,7 +134,7 @@ export default function PrimarySearchAppBar() {
                 <p>Projects</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/portfolio" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Portfolio" color="inherit">
                   <Badge>
@@ -140,7 +144,7 @@ export default function PrimarySearchAppBar() {
                 <p >Portfolio</p>
               </MenuItem>
             </NavLink>
-            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">
@@ -152,7 +156,7 @@ export default function PrimarySearchAppBar() {
             </NavLink>
           </div>
           <div className={classes.sectionMobile}>
-            <NavLink to="/" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton color="inherit" classes={{ label: classes.iconButton }}>
                   <Badge color="secondary">
@@ -161,7 +165,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/projects" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/projects" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Projects" color="inherit">
                   <Badge>
@@ -170,7 +174,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/portfolio" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/portfolio" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="Portfolio" color="inherit">
                   <Badge>
@@ -179,7 +183,7 @@ export default function PrimarySearchAppBar() {
                 </IconButton>
               </MenuItem>
             </NavLink>
-            <NavLink to="/about" style={{color:'white', textDecoration:'none'}} exact activeClassName="main-nav-active">
+            <NavLink to="/about" style={{color:'#bbd4ee', textDecoration:'none'}} exact activeClassName="main-nav-active">
               <MenuItem>
                 <IconButton aria-label="About Me" color="inherit">
                   <Badge color="inherit">
@@ -196,15 +200,17 @@ export default function PrimarySearchAppBar() {
         <Body/>
       </Route>
       <Route path="/projects">
-          <Box p={-5} ml={25} mr={25} mt={8} id="div2">
-            <Projects/>
-          </Box>
+        <Box p={'5%'} ml={'8%'} mr={'8%'} mt={'8%'} id="div2">
+          <Projects/>
+        </Box>
       </Route>
       <Route path="/about">
           <About/>
       </Route>
       <Route path="/portfolio">
+        <Box p={'5%'} ml={'8%'} mr={'8%'} mt={'8%'} id="div2">
           <Portfolio/>
+        </Box>
       </Route>
     </Switch>
     </Router>
