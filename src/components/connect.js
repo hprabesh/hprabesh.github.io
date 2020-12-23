@@ -21,7 +21,7 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <Form className="formContact" netlify name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <Form className="formContact" name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
               <Form.Row>
                 <Form.Group as={Col} md={6} lg={6} sm={12} >
                   <Form.Label>First: *</Form.Label>
