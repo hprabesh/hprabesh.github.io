@@ -21,7 +21,7 @@ import Image from './images/logo-01.svg';
 
 //all CSS Import below
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './css/app.css';
+import './css/App.css';
 
 const NavStyles=(colorCode)=>{
   return ({
