@@ -1,78 +1,85 @@
-import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import InstagramIcon from '@material-ui/icons/Instagram';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import Button from '@material-ui/core/Button';
+import React, { Component } from 'react';
+import {Container,Row,Col,Form,Button} from 'react-bootstrap';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    maxWidth: 430,
-    margin: `${theme.spacing(10)}px auto`,
-    marginLeft:`${theme.spacing(30)}px auto`,
-    padding: theme.spacing(0),
-    background:'transparent',
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-    
-  },
-  toolbar: {
-    minHeight: 40,
-    alignItems: 'flex-start',
-    paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(1),
-    justifyContentL:'center'
-  },
-  title: {
-    flexGrow: 1,
-    alignSelf: 'justify',
-    marginRight:5,
-    paddingTop:12,
-  },
-  AppBar:{
-    border:2,
-    borderRadius:15,
-    borderColor:'red'
-  },
-  label: {
-    // Aligns the content of the button vertically.
-    flexDirection: 'column',
+//all CSS Import below
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../css/connect.css';
 
-    fontSize:12,
-    paddingRight:8,
-    justifyContent: "space-between",
-  },
-  icon: {
-    fontSize: '20px !important',
-    marginBottom: theme.spacing.unit
-  },
-  button:{
-    
+//import images
+import GitHub from '../images/github-01.svg';
+import Instagram from '../images/instagram-01.svg';
+import LinkedIn from '../images/linkedin-01.svg';
+
+class Contact extends Component {
+  // state = {  } //update this one if in need
+  render() { 
+    return ( 
+        <React.Fragment>
+          <Container fluid>
+            <Row>
+              <Col lg={12} className="text-center">
+                <h1>Drop me a message!</h1>
+              </Col>
+            </Row>
+            <Form className="formContact" netlify name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+              <Form.Row>
+                <Form.Group as={Col} md={6} lg={6} sm={12} >
+                  <Form.Label>First: *</Form.Label>
+                  <Form.Control required type="text" width="100px" placeholder="First Name" className="formInputSection"/>
+                </Form.Group>
+                <Form.Group as={Col} md={6} lg={6} sm={12} > 
+                  <Form.Label>Last: *</Form.Label>
+                  <Form.Control required type="text" placeholder="Last Name" className="formInputSection" />
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md={6} lg={6} sm={12} controlId="formGroupEmail">
+                  <Form.Label>Email: *</Form.Label>
+                  <Form.Control required type="email" width="100px" placeholder="Email" className="formInputSection"/>
+                </Form.Group>
+                <Form.Group as={Col} md={6} lg={6} sm={12} > 
+                  <Form.Label>Phone Number:</Form.Label>
+                  <Form.Control type="text" placeholder="Phone Number" className="formInputSection"/>
+                </Form.Group>
+              </Form.Row>
+              <Form.Row>
+                <Form.Group as={Col} md={12} lg={12}>
+                  <Form.Label>Message: *</Form.Label>
+                  <Form.Control required as="textarea" rows={3} placeholder="Type your messages" className="formInputSection"/>
+                </Form.Group>
+              </Form.Row>
+              <Button variant="primary" type="submit" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
+                Submit Message
+              </Button>
+            </Form> 
+            <Row className="letsConnect align-items-center">
+              <Col md={4}  className="center-block d-flex justify-content-center"><h1 className="letsConnectChild">Let's Connect</h1></Col>
+
+              <Col md={4} >
+                <Row >
+                  <Col xs={4}   className="center-block d-flex justify-content-center">
+                    <figure align="Center"><a href="http://github.com/hprabesh/" title="GitHub" target="_blank" rel="noreferrer"><img src={GitHub}  height="40px" alt="GitHub Icon" /></a><figcaption style={{color:'white', fontWeight:600}}>GitHub</figcaption></figure><br/>
+                  </Col>
+                  <Col xs={4}   className="center-block d-flex justify-content-center">
+                  <figure align="Center"><a href="https://www.instagram.com/prab3ssss/" title="Instagram" target="_blank" rel="noreferrer"><img src={Instagram} height="40px" alt="Instagram Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>Instagram</figcaption></figure>
+                  </Col>
+                  <Col xs={4}   className="center-block d-flex justify-content-center">
+                  <figure align="Center"><a href="https://www.linkedin.com/in/hprabesh/" title="LinkedIn" target="_blank" rel="noreferrer"><img src={LinkedIn} height="40px" alt="LinkedIn Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>LinkedIn</figcaption></figure>
+                  </Col>
+                  <Col></Col>
+                </Row>
+              </Col>
+            </Row>
+            <Row className="align-items-center">
+              <Col md={12} className="center-block d-flex justify-content-center">
+                <h1 className="footer" style={{color:'#5883b4'}}>Learn more <a href="/about-me" title="About Me" style={{color:'#5883b4',fontWeight:'700'}}>about me</a>.</h1>
+              </Col>
+            </Row>
+          </Container>
+          
+        </React.Fragment>
+     );
   }
-  
-}));
-
-export default function ProminentAppBar() {
-  const classes = useStyles();
-
-  return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.AppBar}>
-        <Toolbar className={classes.toolbar}>
-          <Typography className={classes.title} variant="strong" noWrap>
-            <strong>Let's Connect</strong>:
-          </Typography>
-          <Button aria-label="GitHub" color="inherit" href="https://github.com/hprabesh" target="_blank"  classes={{ root: classes.button, label: classes.label }} variant="text"><GitHubIcon className={classes.icon}/><strong>GitHub</strong></Button>
-          <Button aria-label="LinkedIn" href="https://www.linkedin.com/in/hprabesh" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><LinkedInIcon className={classes.icon}/><strong>LinkedIn</strong></Button>
-          <Button aria-label="Instagram" href="https://www.instagram.com/prab3ssss/" target="_blank" edge="end" color="inherit" classes={{ root: classes.button, label: classes.label }} ><InstagramIcon className={classes.icon}/><strong>Instagram</strong></Button> 
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
 }
-
+ 
+export default Contact;

@@ -1,0 +1,26 @@
+
+h1{
+    font-size: x-large;
+}
+.formContact{
+    margin-bottom: 5%;
+}
+.formInputSection{
+    background-color:#e9ecef;
+}
+
+.letsConnect{
+
+    background-color:#8ba1b6;
+    height:150px;
+    
+}
+.letsConnectChild{
+    color:#fefefe;
+    font-size: xx-large;
+}
+.footer{
+    color:'#5883b4' !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

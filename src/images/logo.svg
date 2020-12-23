@@ -1,1 +1,24 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200.93 155"><defs><style>.cls-1{fill:#202130;stroke-linecap:round;stroke-width:5px;}.cls-1,.cls-2{stroke:#fff;stroke-miterlimit:10;}.cls-2,.cls-3{font-size:64px;fill:#fff;font-family:MyriadPro-Regular, Myriad Pro;}</style></defs><path class="cls-1" d="M130.89,4H67.11a19.37,19.37,0,0,0-16.72,9.59L18.72,67.72a19.39,19.39,0,0,0,0,19.56l31.67,54.13A19.37,19.37,0,0,0,67.11,151h63.78a19.37,19.37,0,0,0,16.72-9.59l31.67-54.13a19.39,19.39,0,0,0,0-19.56L147.61,13.59A19.37,19.37,0,0,0,130.89,4Z"/><text class="cls-2" transform="translate(59.82 90.89)">P</text><text class="cls-3" transform="translate(99.42 109.46)">H</text></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 168.3 167.5" style="enable-background:new 0 0 168.3 167.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#163450;stroke:#FFFFFF;stroke-width:5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:#FFFFFF;}
+	.st2{font-family:'FreestyleScript-Regular';}
+	.st3{font-size:64px;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st5{font-family:'ForteMT';}
+	.st6{font-size:26.5631px;}
+	.st7{letter-spacing:1.4;}
+</style>
+<path class="st0" d="M112.7,2.9L55,3.4c-6.2,0.1-11.9,3.2-15,8.4L11.7,58.5c-3.1,5.2-3.1,11.6,0.1,16.8l29,46.3
+	c3.2,5.1,9,8.2,15.2,8.1l57.7-0.5c6.2-0.1,11.9-3.2,15-8.4L157,74.1c3.1-5.2,3.1-11.6-0.1-16.8l-29-46.3
+	C124.7,5.9,118.9,2.8,112.7,2.9z"/>
+<text transform="matrix(1 0 0 1 49.9188 76.0005)" class="st1 st2 st3">P</text>
+<text transform="matrix(1 0 0 1 50.3027 76.0001)" class="st4 st2 st3">P</text>
+<text transform="matrix(1 0 0 1 83.8248 96.7244)" class="st1 st2 st3">H</text>
+<text transform="matrix(1 0 0 1 960 540)" style="font-family:'MyriadPro-Regular'; font-size:12px;">163450</text>
+<text transform="matrix(0.7047 0 0 1 0 160.7756)" class="st1 st5 st6 st7">Prabesh Humagain</text>
+<path class="st0" d="M81,66c-0.7,0.1-1.5,1.5-1.7,0.1c-0.1-1.4,0.4-1.7,1.1-1.8c0.7-0.1,0.4-0.1,0.5,1.3C81,67,81.6,66,81,66z"/>
+</svg>

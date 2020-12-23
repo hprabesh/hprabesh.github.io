@@ -1,0 +1,13 @@
+.aboutJumboTron{
+    margin-top: -2%;
+}
+
+.hobbies {	
+    /* transform: skew(0,-2.5deg); */
+    background-color:#8ba1b6;
+    color:white;
+}
+.skewness{
+    /* transform: skew(0,2deg); */
+    
+}

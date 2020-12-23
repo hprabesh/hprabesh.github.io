@@ -16,8 +16,10 @@
     "react-helmet": "^6.1.0",
     "react-particles-js": "^3.3.0",
     "react-router-dom": "^5.2.0",
+    "react-router-transition": "^2.0.0",
     "react-scripts": "^4.0.1",
     "react-time": "^4.3.0",
+    "react-vertical-timeline-component": "^3.3.1",
     "typewriter-effect": "^2.13.1"
   },
   "scripts": {
@@ -40,5 +42,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

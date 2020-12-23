@@ -1,0 +1,22 @@
+.vertical-timeline-element-title{
+    padding-bottom: 2%;
+    font-size: 20px;
+}
+.vertical-timeline-element-subtitle{
+    font-size:16px;
+    font-weight: 600;
+    
+}
+.vertical-timeline-element-text{
+    color:#fefefe !important;
+}
+.vertical-timeline-element-header{
+    text-transform: uppercase;
+    padding-bottom: 5%;
+}
+.vertical-timeline.vertical-timeline-custom-line::before {
+    background: #1e2130;
+    margin-top:8%;
+    height: 63%;
+  }
+  

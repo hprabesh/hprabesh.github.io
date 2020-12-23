@@ -15,19 +15,19 @@ code {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 8px;
-  background: #CFD8DC;
+  width: 6px;
+  background: #fefefe;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
+  box-shadow: inset 0 0 4px #8ba1b6; 
   border-radius: 10px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background:   hsl(209, 57%, 20%); 
+  background:   #163450; 
   border-radius: 10px;
 }
 
