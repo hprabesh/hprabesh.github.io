@@ -10,8 +10,36 @@ import GitHub from '../images/github-01.svg';
 import Instagram from '../images/instagram-01.svg';
 import LinkedIn from '../images/linkedin-01.svg';
 
+
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
+
 class Contact extends Component {
-  // state = {  } //update this one if in need
+  constructor(props){
+    super(props);
+    this.state={
+      FirstName:"",
+      LastName:"",
+      Email:"",
+      PhoneNumber:"",
+      Message:"",
+    }
+  }
+  handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...this.state })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+  handleChange = e => this.setState({ [e.target.name]: e.target.value });
   render() { 
     return ( 
         <React.Fragment>
@@ -21,31 +49,31 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <form className="formContact"  method="POST" data-netlify="true" action="">
+            <form className="formContact" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
               <Row>
                 <Col sm={12} md={6} >
                   <label className="padding">First: *</label><br/>
-                  <input type="text" placeholder="First Name" className="formInputSection" required/>
+                  <input name="FirstName" type="text" placeholder="First Name" className="formInputSection" required/>
                 </Col>
                 <Col sm={12} md={6}>
                   <label className="padding">Last: *</label><br/>
-                  <input type="text" placeholder="Last Name" className="formInputSection" required/>
+                  <input name="LastName" type="text" placeholder="Last Name" className="formInputSection" required/>
                 </Col>
               </Row>
               <Row>
                 <Col sm={12} md={6} >
                   <label className="padding">Email: *</label><br/>
-                  <input type="email" placeholder="Email" className="formInputSection" required/>
+                  <input name="Email" type="email" placeholder="Email" className="formInputSection" required/>
                 </Col>
                 <Col sm={12} md={6}>
                   <label className="padding">Phone Number: </label><br/>
-                  <input type="text" placeholder="Phone Number" className="formInputSection"/>
+                  <input name="PhoneNumber" type="text" placeholder="Phone Number" className="formInputSection"/>
                 </Col>
               </Row>
               <Row>
                 <Col sm={12} >
                   <label className="padding">Message: *</label><br/>
-                  <textarea rows={4} placeholder="Messages" className="formInputSection" required/>
+                  <textarea name="Message" rows={4} placeholder="Messages" className="formInputSection" required/>
                 </Col>
               </Row>
               <Button variant="primary" type="submit" className="padding" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
