@@ -50,6 +50,7 @@ class Contact extends Component {
               </Col>
             </Row>
             <form className="formContact" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+              <input type="hidden" name="form-name" value="contact"/>
               <Row>
                 <Col sm={12} md={6} >
                   <label className="padding">First: *</label><br/>
