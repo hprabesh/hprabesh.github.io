@@ -56,7 +56,7 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <form className="formContact" name="contact" method="POST" onSubmit={this.handleSubmit}>
+            <form className="formContact" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
               <input type="hidden" name="form-name" value="contact"/>
               <Row>
                 <Col sm={12} md={6} >
