@@ -27,9 +27,9 @@ export default function Timeline(){
                     date="2019 - 2023"
                     iconStyle={circleTimelineCSS}         
                 >
-                    <h2 className="vertical-timeline-element-header vertical-timeline-element-text">Undergraduate</h2>
-                    <h3 className="vertical-timeline-element-title vertical-timeline-element-text">University of Texas at Arlington (UTA)</h3>
-                    <h4 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Arlington, TX</h4>
+                    <h3 className="vertical-timeline-element-header vertical-timeline-element-text">Undergraduate</h3>
+                    <h4 className="vertical-timeline-element-title vertical-timeline-element-text">University of Texas at Arlington (UTA)</h4>
+                    <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Arlington, TX</h5>
                     <p className="vertical-timeline-element-text">
                         Computer Science and Mathematics (<em>Most Likely</em>)
                     </p>
@@ -42,9 +42,9 @@ export default function Timeline(){
                     iconStyle={circleTimelineCSS}  
                     
                 >
-                    <h2 className="vertical-timeline-element-header vertical-timeline-element-text">High School</h2>
-                    <h3 className="vertical-timeline-element-title vertical-timeline-element-text">Trinity International Secondary School</h3>
-                    <h4 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h4>
+                    <h3 className="vertical-timeline-element-header vertical-timeline-element-text">High School</h3>
+                    <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Trinity International Secondary School</h4>
+                    <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h5>
                     <p className="vertical-timeline-element-text">
                     Lorem Ipsum
                     </p>
@@ -57,9 +57,9 @@ export default function Timeline(){
                     iconStyle={circleTimelineCSS}  
                     
                 >
-                    <h2 className="vertical-timeline-element-header vertical-timeline-element-text">Secondary School</h2>
-                    <h3 className="vertical-timeline-element-title vertical-timeline-element-text">Arunima Secondary School</h3>
-                    <h4 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h4>
+                    <h3 className="vertical-timeline-element-header vertical-timeline-element-text">Secondary School</h3>
+                    <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Arunima Secondary School</h4>
+                    <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h5>
                     <p className="vertical-timeline-element-text">
                     Lorem Ipsum
                     </p>

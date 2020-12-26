@@ -8,6 +8,7 @@ import '../css/about.css';
 
 //all local import below
 import Timeline from './sub-components/education_timeline.js';
+import Skills from './sub-components/skills.js';
 // import Particles from './particles.js';
 
 
@@ -50,11 +51,40 @@ class About extends Component {
         </Container>
         <Container fluid>
           <Row>
-            <Col xs={12}>
+            <Col xs={11}>
                 {/* Imported Timeline portion from sub-components directory */}
               <Timeline/>
             </Col>
           </Row>
+        </Container>
+        <Container fluid>
+          <Row>
+            <Col md={12} className="center-block d-flex justify-content-center">
+              <h2>Technical Skills</h2>
+            </Col>
+          </Row>
+          <Skills
+            title="Front End Web Development"
+            tools={["HTML", "CSS", "React","jQuery","Bootstrap"]}
+            skillLevel="70"
+          />
+          <Skills
+            title="Back End Web Development"
+            tools={["Express JS","Flask", "PHP", "CMS (WordPress, Cascade, SiteCore)"]}
+            skillLevel="40"
+          />
+          <Skills
+            title="Programming Languages"
+            tools={["C/C++", "Python","JavaScript","Java"]}
+            programming="true"
+            skillLevel="50"
+          />
+          <Skills
+            title="Other Tools"
+            tools={["Git", "C++ Libraries (Gtk+/Gtkmm, Qt)","Python Libraries (NumPy, Pandas, Requests, Selenium, Tensorflow)","MongoDB", "Matlab"]}
+            programming="true"
+            skillLevel="55"
+          />
         </Container>
         <Jumbotron className="hobbies">
           <Container fluid>
@@ -81,6 +111,7 @@ class About extends Component {
             </Row>
           </Container>
         </Jumbotron>
+        
       </div>
      );
   }
