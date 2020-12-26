@@ -83,7 +83,7 @@ class About extends Component {
             title="Other Tools"
             tools={["Git", "C++ Libraries (Gtk+/Gtkmm, Qt)","Python Libraries (NumPy, Pandas, Requests, Selenium, Tensorflow)","MongoDB", "Matlab"]}
             programming="true"
-            skillLevel="55"
+            skillLevel="45"
           />
         </Container>
         <Jumbotron className="hobbies">

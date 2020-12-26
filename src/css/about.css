@@ -1,7 +1,10 @@
 .aboutJumboTron{
-    margin-top: -2%;
+    padding-top: -7% !important;
+    margin-top: -6.5%;
 }
-
+.jumboTron{
+    margin-top: 1%;
+}
 .hobbies {	
     /* transform: skew(0,-2.5deg); */
     background-color:#8ba1b6;
