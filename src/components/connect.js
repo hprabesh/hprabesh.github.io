@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container,Row,Col,Form,Button} from 'react-bootstrap';
+import {Container,Row,Col,Button} from 'react-bootstrap';
 
 //all CSS Import below
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,37 +21,37 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <Form className="formContact" name="contact" method="POST" data-netlify="true" action="">
-              <Form.Row>
-                <Form.Group as={Col} md={6} lg={6} sm={12} >
-                  <Form.Label>First: *</Form.Label>
-                  <Form.Control required type="text" width="100px" placeholder="First Name" className="formInputSection"/>
-                </Form.Group>
-                <Form.Group as={Col} md={6} lg={6} sm={12} > 
-                  <Form.Label>Last: *</Form.Label>
-                  <Form.Control required type="text" placeholder="Last Name" className="formInputSection" />
-                </Form.Group>
-              </Form.Row>
-              <Form.Row>
-                <Form.Group as={Col} md={6} lg={6} sm={12} controlId="formGroupEmail">
-                  <Form.Label>Email: *</Form.Label>
-                  <Form.Control required type="email" width="100px" placeholder="Email" className="formInputSection"/>
-                </Form.Group>
-                <Form.Group as={Col} md={6} lg={6} sm={12} > 
-                  <Form.Label>Phone Number:</Form.Label>
-                  <Form.Control type="text" placeholder="Phone Number" className="formInputSection"/>
-                </Form.Group>
-              </Form.Row>
-              <Form.Row>
-                <Form.Group as={Col} md={12} lg={12}>
-                  <Form.Label>Message: *</Form.Label>
-                  <Form.Control required as="textarea" rows={3} placeholder="Type your messages" className="formInputSection"/>
-                </Form.Group>
-              </Form.Row>
-              <Button variant="primary" type="submit" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
+            <form className="formContact"  method="POST" data-netlify="true" action="">
+              <Row>
+                <Col sm={12} md={6} >
+                  <label className="padding">First: *</label><br/>
+                  <input type="text" placeholder="First Name" className="formInputSection" required/>
+                </Col>
+                <Col sm={12} md={6}>
+                  <label className="padding">Last: *</label><br/>
+                  <input type="text" placeholder="Last Name" className="formInputSection" required/>
+                </Col>
+              </Row>
+              <Row>
+                <Col sm={12} md={6} >
+                  <label className="padding">Email: *</label><br/>
+                  <input type="email" placeholder="Email" className="formInputSection" required/>
+                </Col>
+                <Col sm={12} md={6}>
+                  <label className="padding">Phone Number: </label><br/>
+                  <input type="text" placeholder="Phone Number" className="formInputSection"/>
+                </Col>
+              </Row>
+              <Row>
+                <Col sm={12} >
+                  <label className="padding">Message: *</label><br/>
+                  <textarea rows={4} placeholder="Messages" className="formInputSection" required/>
+                </Col>
+              </Row>
+              <Button variant="primary" type="submit" className="padding" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
                 Submit Message
               </Button>
-            </Form> 
+            </form> 
             <Row className="letsConnect align-items-center">
               <Col md={4}  className="center-block d-flex justify-content-center"><h1 className="letsConnectChild">Let's Connect</h1></Col>
 

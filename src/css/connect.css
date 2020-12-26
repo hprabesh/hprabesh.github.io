@@ -1,3 +1,15 @@
+textarea:focus, input:focus{
+    outline-color:#8fa1b6 ;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
 h1{
     font-size: x-large;
@@ -7,10 +19,16 @@ h1{
 }
 .formInputSection{
     background-color:#e9ecef;
+    border-radius: 5px;
+    border-color: none;
+    width: 100%;
+    /* margin-bottom: 1%; */
+}
+.padding{
+    margin-top: 3%;
 }
 
 .letsConnect{
-
     background-color:#8ba1b6;
     height:150px;
     
