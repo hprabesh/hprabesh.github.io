@@ -56,7 +56,7 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <form className="formContact" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
+            <form className="formContact" name="contact" method="POST" onSubmit={this.handleSubmit}>
               <input type="hidden" name="form-name" value="contact"/>
               <Row>
                 <Col sm={12} md={6} >
@@ -84,7 +84,7 @@ class Contact extends Component {
                   <textarea name="Message" rows={4} placeholder="Messages" value={Message} onChange={this.handleChange} className="formInputSection" required/>
                 </Col>
               </Row>
-              <button variant="primary" type="submit" className="padding" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
+              <button id="submit" variant="primary" type="submit" className="padding" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
                 Submit Message
               </button>
             </form> 
