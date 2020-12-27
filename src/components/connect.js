@@ -84,10 +84,11 @@ class Contact extends Component {
                   <textarea name="Message" rows={4} placeholder="Messages" value={Message} onChange={this.handleChange} className="formInputSection" required/>
                 </Col>
               </Row>
-              <button id="submit" variant="primary" type="submit" className="padding" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
+              <button id="submit" type="submit" className="padding submit" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
                 Submit Message
               </button>
             </form> 
+
             <Row className="letsConnect align-items-center">
               <Col md={4}  className="center-block d-flex justify-content-center"><h1 className="letsConnectChild">Let's Connect</h1></Col>
 
