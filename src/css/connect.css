@@ -14,7 +14,7 @@ input{
 h1{
     font-size: x-large;
 }
-.formContact{
+form[name=contact]{
     margin-bottom: 5%;
 }
 .formInputSection{

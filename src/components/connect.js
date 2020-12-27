@@ -41,13 +41,6 @@ class Contact extends Component {
   };
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
   render() {
-    const {
-      FirstName,
-      LastName,
-      Email,
-      PhoneNumber,
-      Message,
-    } = this.state;
     return ( 
         <React.Fragment>
           <Container fluid>
@@ -56,32 +49,32 @@ class Contact extends Component {
                 <h1>Drop me a message!</h1>
               </Col>
             </Row>
-            <form className="formContact" name="contact" method="POST" onSubmit={this.handleSubmit}>
+            <form name="contact" method="POST" onSubmit={this.handleSubmit}>
               <input type="hidden" name="form-name" value="contact"/>
               <Row>
                 <Col sm={12} md={6} >
                   <label className="padding">First: *</label><br/>
-                  <input name="FirstName" type="text" placeholder="First Name" className="formInputSection" value={FirstName} onChange={this.handleChange} required/>
+                  <input type="text" placeholder="First Name" name="FirstName" className="formInputSection" required/>
                 </Col>
                 <Col sm={12} md={6}>
                   <label className="padding">Last: *</label><br/>
-                  <input name="LastName" type="text" placeholder="Last Name" className="formInputSection" value={LastName} onChange={this.handleChange} required/>
+                  <input  type="text" placeholder="Last Name" name="LastName" className="formInputSection" required/>
                 </Col>
               </Row>
               <Row>
                 <Col sm={12} md={6} >
                   <label className="padding">Email: *</label><br/>
-                  <input name="Email" type="email" placeholder="Email" className="formInputSection" value={Email} onChange={this.handleChange} required/>
+                  <input type="email" placeholder="Email" name="Email" className="formInputSection" required/>
                 </Col>
                 <Col sm={12} md={6}>
                   <label className="padding">Phone Number: </label><br/>
-                  <input name="PhoneNumber" type="text" placeholder="Phone Number" value={PhoneNumber} onChange={this.handleChange} className="formInputSection"/>
+                  <input type="text" placeholder="Phone Number" name="PhoneNumber" className="formInputSection"/>
                 </Col>
               </Row>
               <Row>
                 <Col sm={12} >
                   <label className="padding">Message: *</label><br/>
-                  <textarea name="Message" rows={4} placeholder="Messages" value={Message} onChange={this.handleChange} className="formInputSection" required/>
+                  <textarea rows={4} placeholder="Messages" name="Message" className="formInputSection" required/>
                 </Col>
               </Row>
               <button id="submit" type="submit" className="padding submit" style={{backgroundColor:'#5883b4',outlineColor:'#5883b4'}}>
