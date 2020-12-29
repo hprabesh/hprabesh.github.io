@@ -13,7 +13,7 @@ import {
 import Connect from './components/connect.js';
 import About from './components/about.js';
 import Home from './components/home.js';
-
+import Portfolio from './components/portfolio.js';
 //all images from local dir
 import Image from './images/logo-01.svg';
 
@@ -107,6 +107,7 @@ class App extends Component {
             <Route exact path="/"><div style={{paddingTop:'120px', marginBottom:'30%'}}><Home/></div></Route>
             <Route path="/contact"><div style={{paddingTop:'120px'}}><Connect/></div></Route> 
             <Route path="/about-me"><div style={{paddingTop:'120px'}}><About/></div></Route> 
+            <Route path="/portfolio"><div style={{paddingTop:'120px'}}><Portfolio/></div></Route> 
             <Route render={function () {
               return <p>Not found</p>
             }} />

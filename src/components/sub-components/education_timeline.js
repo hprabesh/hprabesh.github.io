@@ -13,7 +13,7 @@ const contentArrowStyleCSS={
 
 const circleTimelineCSS={
     background: '#8fa1b6',
-    color: '#111111'
+    color: '#111111',
 }
 
 export default function Timeline(){
@@ -31,7 +31,8 @@ export default function Timeline(){
                     <h4 className="vertical-timeline-element-title vertical-timeline-element-text">University of Texas at Arlington (UTA)</h4>
                     <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Arlington, TX</h5>
                     <p className="vertical-timeline-element-text">
-                        Computer Science and Mathematics (<em>Most Likely</em>)
+                        <strong>Major: </strong>Computer Science<br/>
+                        <strong>Minor: </strong>Mathematics (<em>Most Likely</em>)
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -45,9 +46,7 @@ export default function Timeline(){
                     <h3 className="vertical-timeline-element-header vertical-timeline-element-text">High School</h3>
                     <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Trinity International Secondary School</h4>
                     <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h5>
-                    <p className="vertical-timeline-element-text">
-                    Lorem Ipsum
-                    </p>
+                    
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
@@ -57,12 +56,9 @@ export default function Timeline(){
                     iconStyle={circleTimelineCSS}  
                     
                 >
-                    <h3 className="vertical-timeline-element-header vertical-timeline-element-text">Secondary School</h3>
-                    <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Arunima Secondary School</h4>
+                    <h3 className="vertical-timeline-element-header vertical-timeline-element-text">Primary and Secondary School</h3>
+                    <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Arunima Higher Secondary School</h4>
                     <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Kathmandu, Nepal</h5>
-                    <p className="vertical-timeline-element-text">
-                    Lorem Ipsum
-                    </p>
                 </VerticalTimelineElement>
                 
             </VerticalTimeline>
