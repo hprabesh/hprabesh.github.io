@@ -1,0 +1,30 @@
+.subtitle-text{
+    font-size:15px;
+    margin-bottom: 0%;
+}
+.child-subtitle-text{
+    font-style: italic;
+    
+}
+.child-subtitle-text-title{
+    font-weight: 700;
+}
+
+* {box-sizing: border-box}
+
+.skillcontainer {
+  width: 100%;
+  border-radius: 15px;;
+  background-color: #8fa1b6;
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  border-radius: 15px;
+}
+.skillitem{
+  padding-bottom: 2.5%;
+}

@@ -1,0 +1,42 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191.66 182.43">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #163450;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+        font-size: 64px;
+        font-family: FreestyleScript-Regular, Freestyle Script;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        font-size: 37.74px;
+        font-family: ForteMT, Forte;
+        letter-spacing: 0.08em;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M124.13,3.3l-57.67.49a17.68,17.68,0,0,0-15,8.37L23.17,58.91a16,16,0,0,0,.15,16.81l29,46.27a17.73,17.73,0,0,0,15.19,8.12l57.66-.49a17.71,17.71,0,0,0,15.05-8.37L168.48,74.5a15.94,15.94,0,0,0-.14-16.81l-29-46.28A17.71,17.71,0,0,0,124.13,3.3Z"/>
+  <text class="cls-2" transform="translate(49.92 76)">P</text>
+  <text class="cls-3" transform="translate(50.3 76)">P</text>
+  <text class="cls-2" transform="translate(103.4 97.62)">H</text>
+  <text class="cls-4" transform="translate(1.07 173.83) scale(0.54 1)">Prabesh Humagain</text>
+  <path class="cls-1" d="M91.35,67.24c-.66.06-1.53,1.46-1.67.07s.41-1.74,1.07-1.8.4-.09.54,1.3S92,67.18,91.35,67.24Z"/>
+</svg>

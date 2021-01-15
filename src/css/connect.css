@@ -1,0 +1,65 @@
+textarea:focus, input:focus{
+    outline-color:#8fa1b6 ;
+}
+input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+h1{
+    font-size: x-large;
+}
+form[name=contact]{
+    margin-bottom: 5%;
+}
+.formInputSection{
+    background-color:#e9ecef;
+    border-radius: 5px;
+    border-color: none;
+    width: 100%;
+    /* margin-bottom: 1%; */
+}
+.padding{
+    margin-top: 3%;
+}
+
+.letsConnect{
+    background-color:#8ba1b6;
+    height:150px;
+    
+}
+.letsConnectChild{
+    color:#fefefe;
+    font-size: xx-large;
+}
+.footer{
+    color:'#5883b4' !important;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.submit{
+    /* position: relative; */
+    display: block;
+    width: 200px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #1c89ff;
+    border: solid 1px transparent;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+}
+.submit:hover{
+    background-color: transparent;
+    border-color: #fff;
+    transition: all .1s ease-in-out;
+    
+}

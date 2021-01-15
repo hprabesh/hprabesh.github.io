@@ -1,0 +1,23 @@
+
+.navbar-dark{
+  background-color: #163450;
+
+}
+.header-name{
+  font-size: 15px;  
+  padding-top: 1%;
+  color: #1e2130;
+}
+.nav-item{
+  margin-right: 30px;;
+  border-radius:'2px';
+  color:#fefefe !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  
+}
+.navbar-bottom{
+  /* position: fixed; */
+  bottom: 0 ;
+}
+  
