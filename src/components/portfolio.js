@@ -29,9 +29,7 @@ const responsive = {
   568: { items: 2 },
   1024: { items: 3 },
 };
-const handleDragStart=(e)=>{
-  e.preventDefault();
-}
+
 class Portfolio extends Component {
   // state = {  }
   constructor(props){
@@ -102,16 +100,20 @@ class Portfolio extends Component {
               <Row>
                 <Col>
                 <AliceCarousel
+                activeIndex={0}
                 touchTracking={true}
                 mouseTracking={true}
-                
+                autoPlayInterval={2000}
+                autoPlayDirection="rtl"
+                mouseTrackingEnabled={true}
+                disableAutoPlayOnAction={true}
                 items={
                   [
-                    <Figures src={MongoDB} alt="MongoDB" description="MongoDB" onDragStart={handleDragStart} width="80%"/>,
-                    <Figures src={MachineLearning} alt="Machine Learning" description="Machine Learning" onDragStart={handleDragStart} width="80%"/>,
-                    <Figures src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning" onDragStart={handleDragStart} width="80%"/>,
-                    <Figures src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network" onDragStart={handleDragStart} width="80%"/>,
-                    <Figures src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" onDragStart={handleDragStart} width="80%"/>
+                    <Figures src={MongoDB} alt="MongoDB" description="MongoDB"  width="80%"/>,
+                    <Figures src={MachineLearning} alt="Machine Learning" description="Machine Learning"  width="80%"/>,
+                    <Figures src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning"  width="80%"/>,
+                    <Figures src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network"  width="80%"/>,
+                    <Figures src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" width="80%"/>
                   ]
                 }
                 responsive={responsive}
