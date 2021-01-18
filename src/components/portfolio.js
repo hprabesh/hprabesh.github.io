@@ -115,7 +115,7 @@ export default class Portfolio extends Component {
     return ( 
       <React.Fragment>
         {(this.state.buttonStatus >=0) ? <Project title={this.state.titles[this.state.buttonStatus]} projectDescription={this.state.projectDescription[this.state.buttonStatus]} buttonSubmit={this.onButtonClose} image={this.state.imageUrls[this.state.buttonStatus]} projectLink="https://www.github.com/hprabesh" />: "" }
-              <div className="projectBlock">
+              <div className="projectBlock"><br/>
                 <center><h2>Projects</h2></center><br/>
                 <div className="aboutJumboTron" >
                   <Carousel
