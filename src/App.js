@@ -14,8 +14,10 @@ import Connect from './components/connect.js';
 import About from './components/about.js';
 import Home from './components/home.js';
 import Portfolio from './components/portfolio.js';
+import Resume from './images/resume-pdf/resume.pdf';
 //all images from local dir
 import Image from './images/logo-01.svg';
+
 
 
 
@@ -100,6 +102,16 @@ class App extends Component {
                   activeStyle={this.state.navbarStatus ? NavStyles('#5883b4') : NavStyles('#8fa1b6')}
                 >
                   Contact
+                </Nav.Link>
+
+                <Nav.Link
+                  href={Resume}
+                  target="_blank"
+                  rel="noopener"
+                  className="nav-item"
+                  activeStyle={this.state.navbarStatus ? NavStyles('#5883b4') : NavStyles('#8fa1b6')}
+                >
+                  Resume
                 </Nav.Link>
 
               </Nav>

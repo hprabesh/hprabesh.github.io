@@ -17,7 +17,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../css/portfolio.css';
 
 //all images import
+//for Projects
+import PerformanceTracker from '../images/project-image/performance-tracker.png';
+
+//for Certificates
 import MongoDB from '../images/certificates-images/mongodb.png';
+import MachineLearningAmazon from '../images/certificates-images/amazon-machinelearning.png';
 import MachineLearning from '../images/certificates-images/machine-learning.png';
 import DeepLearning from '../images/certificates-images/neural-network-and-deep-learning.PNG';
 import CNN from '../images/certificates-images/convolutional-neural-network.PNG';
@@ -41,18 +46,21 @@ export default class Portfolio extends Component {
 
     buttonStatus:-1, //default status for Project Pop Up Close
     titles:[
-        "0","1","2","3","4"
+        "MANGA Manager","Performance Tracker","Deans Engineering Challenge for Smart City","Weather Wiz"
       ], // titles for pop up 
     projectDescription:[
-      "Project Description 0",
-      "Project Description 1",
-      "Project Description 2",
-      "Project Description 3",
-      "Project Description 4"
+      "Project Description MANGA Manager",
+      "A performance level monitoring web application – frontend written using React and Material-UI, backend written using Express, Node.js and MongoDB; used Azure DevOps to create CI/CD pipeline for the frontend and Azure Web App Service for the backend ",
+      "Python (TensorFlow) project that uses Artificial Neural Network Model to predict the amount of radiation incident in Arlington Region to analyze the feasibility of hybrid structure of solar panel and windmill as an alternative source of energy with the goal to make Arlington a smart city. ",
+      "Python project using Requests, Beautiful Soup, Matplotlib and Pandas libraries, to create the database of weather info of Arlington scrapped off the site from the past 20 years to analyze the weather change in Arlington region. ",
     ], //description for pop up
+    projectURL:[
+      "https://github.com/hprabesh/MANGA_manager",
+      "https://github.com/hprabesh/eLive",
+    ], //for URL of projects
     imageUrls:[
       Test,
-      CNN,
+      PerformanceTracker,
       MongoDB,
       MachineLearning,
       DeepLearning
@@ -71,7 +79,7 @@ export default class Portfolio extends Component {
     },
     {
       key: uuidv4(),
-      content: <img className="project-carousel" src={CNN} alt="2" width="40px" onClick={()=>this.onButtonClick(1)} />,
+      content: <img className="project-carousel" src={PerformanceTracker} alt="2" width="40px" onClick={()=>this.onButtonClick(1)} />,
     },
     {
       key: uuidv4(),
@@ -81,11 +89,7 @@ export default class Portfolio extends Component {
       key: uuidv4(),
       content: <img className="project-carousel" src={MachineLearning} alt="4"  width="40px" onClick={()=>this.onButtonClick(3)}/>
     },
-    {
-      key: uuidv4(),
-      content: <img src={DeepLearning} alt="5" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(4)} />
-    },
-    
+
   ].map((slide, index) => {
     return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
   });
@@ -114,7 +118,7 @@ export default class Portfolio extends Component {
   render() { 
     return ( 
       <React.Fragment>
-        {(this.state.buttonStatus >=0) ? <Project title={this.state.titles[this.state.buttonStatus]} projectDescription={this.state.projectDescription[this.state.buttonStatus]} buttonSubmit={this.onButtonClose} image={this.state.imageUrls[this.state.buttonStatus]} projectLink="https://www.github.com/hprabesh" />: "" }
+        {(this.state.buttonStatus >=0) ? <Project title={this.state.titles[this.state.buttonStatus]} projectDescription={this.state.projectDescription[this.state.buttonStatus]} buttonSubmit={this.onButtonClose} image={this.state.imageUrls[this.state.buttonStatus]} projectLink={this.state.projectURL[this.state.buttonStatus]}  />: "" }
               <div className="projectBlock"><br/>
                 <center><h2>Projects</h2></center><br/>
                 <div className="aboutJumboTron" >
@@ -143,6 +147,7 @@ export default class Portfolio extends Component {
                 items={
                   [
                     <Figures src={MongoDB} alt="MongoDB" description="MongoDB"  width="80%"/>,
+                    <Figures src={MachineLearningAmazon} alt="Amazon Machine Learning Webinar" description="Amazon Machine Learning Webinar"  width="80%"/>,
                     <Figures src={MachineLearning} alt="Machine Learning" description="Machine Learning"  width="80%"/>,
                     <Figures src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning"  width="80%"/>,
                     <Figures src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network"  width="80%"/>,
