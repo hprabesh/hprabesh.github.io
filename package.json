@@ -20,6 +20,7 @@
     "react-router-dom": "^5.2.0",
     "react-router-transition": "^2.0.0",
     "react-scripts": "^4.0.1",
+    "react-spring-3d-carousel": "^1.2.0",
     "react-time": "^4.3.0",
     "react-vertical-timeline-component": "^3.3.1",
     "typewriter-effect": "^2.13.1"

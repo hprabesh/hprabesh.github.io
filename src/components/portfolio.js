@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-
-import {Container, Row, Col, Jumbotron} from 'react-bootstrap';
-import {Carousel} from '3d-react-carousal';
+import uuidv4 from "uuid";
+import { config } from "react-spring";
+import {Container, Row, Col} from 'react-bootstrap';
+import Carousel from "react-spring-3d-carousel";
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
@@ -30,37 +31,72 @@ const responsive = {
   1024: { items: 3 },
 };
 
-class Portfolio extends Component {
-  // state = {  }
-  constructor(props){
-    super(props);
-    this.state={ 
-      buttonStatus:-1,
-      titles:[
+
+export default class Portfolio extends Component {
+  state={ 
+    goToSlide: 0,
+    offsetRadius: 1,
+    showNavigation: true,
+    config: config.slow,
+
+    buttonStatus:-1, //default status for Project Pop Up Close
+    titles:[
         "0","1","2","3","4"
-      ],
-      projectDescription:[
-        "Project Description 0",
-        "Project Description 1",
-        "Project Description 2",
-        "Project Description 3",
-        "Project Description 4"
-      ],
-      imageUrls:[
-        Test,
-        Test,
-        Test,
-        Test,
-      ],
-      certificateLinks:[MongoDB,MachineLearning,DeepLearning,CNN,HyperparameterTuning],
-      images:[],
+      ], // titles for pop up 
+    projectDescription:[
+      "Project Description 0",
+      "Project Description 1",
+      "Project Description 2",
+      "Project Description 3",
+      "Project Description 4"
+    ], //description for pop up
+    imageUrls:[
+      Test,
+      CNN,
+      MongoDB,
+      MachineLearning,
+      DeepLearning
+    ], //image for pop up
+
+
+    //certificates carousel
+    certificateLinks:[MongoDB,MachineLearning,DeepLearning,CNN,HyperparameterTuning], 
+   
+  };
+
+  slides = [
+    {
+      key: uuidv4(),
+      content: <img className="project-carousel" width="40px" src={Test} alt="1" onClick={()=>this.onButtonClick(0)} />
+    },
+    {
+      key: uuidv4(),
+      content: <img className="project-carousel" src={CNN} alt="2" width="40px" onClick={()=>this.onButtonClick(1)} />,
+    },
+    {
+      key: uuidv4(),
+      content: <img src={MongoDB} alt="3" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(2)} />
+    },
+    {
+      key: uuidv4(),
+      content: <img className="project-carousel" src={MachineLearning} alt="4"  width="40px" onClick={()=>this.onButtonClick(3)}/>
+    },
+    {
+      key: uuidv4(),
+      content: <img src={DeepLearning} alt="5" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(4)} />
+    },
     
-    }
-    
-    this.onButtonClick = this.onButtonClick.bind(this);
-    this.onButtonClose = this.onButtonClose.bind(this);
-    // this.handleDragStart= this.handleDragStart.bind(this);
-   }
+  ].map((slide, index) => {
+    return { ...slide, onClick: () => this.setState({ goToSlide: index }) };
+  });
+  
+  
+
+  onChangeInput = e => {
+    this.setState({
+      [e.target.name]: parseInt(e.target.value, 10) || 0
+    });
+  };
 
 
   onButtonClose=()=>{
@@ -74,27 +110,24 @@ class Portfolio extends Component {
     });
   }
 
-  UNSAFE_componentWillMount(){
-    var temp=[];
-    for (let i =0; i<this.state.imageUrls.length; i++){
-      temp=temp.concat(<img src={this.state.imageUrls[i]} alt={i} onClick={()=>this.onButtonClick(i)} />)
-    }
-    this.setState({
-      images:temp,
-    });
-    
-  }
 
   render() { 
     return ( 
       <React.Fragment>
         {(this.state.buttonStatus >=0) ? <Project title={this.state.titles[this.state.buttonStatus]} projectDescription={this.state.projectDescription[this.state.buttonStatus]} buttonSubmit={this.onButtonClose} image={this.state.imageUrls[this.state.buttonStatus]} projectLink="https://www.github.com/hprabesh" />: "" }
-        
-            <Jumbotron className="aboutJumboTron">
-                <center><h2>Projects</h2></center>
-              <Carousel  slides={this.state.images} autoplay= {false} />
-
-            </Jumbotron>
+              <div className="projectBlock">
+                <center><h2>Projects</h2></center><br/>
+                <div className="aboutJumboTron" >
+                  <Carousel
+                    slides={this.slides}
+                    goToSlide={this.state.goToSlide}
+                    offsetRadius={this.state.offsetRadius}
+                    showNavigation={this.state.showNavigation}
+                    animationConfig={this.state.config}
+                  />
+                </div>
+              </div>
+              {/* {console.log(slides)} */}
             <Container>
               <h2>Learning and Certificate</h2>
               <Row>
@@ -126,5 +159,3 @@ class Portfolio extends Component {
      );
   }
 }
- 
-export default Portfolio;

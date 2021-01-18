@@ -1,9 +1,10 @@
-.aboutJumboTron{
+.aboutInfoPage{
     padding-top: -7% !important;
     margin-top: -6.5%;
 }
-.jumboTron{
+.summary{
     margin-top: 5%;
+
 }
 .hobbies {	
     /* transform: skew(0,-2.5deg); */

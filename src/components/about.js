@@ -25,9 +25,9 @@ class About extends Component {
   // state = {  }
   render() { 
     return ( 
-      <div className="aboutJumboTron">
-        <Jumbotron className="jumboTron">
-          <Container>
+      <div className="aboutInfoPage">
+        <Jumbotron className="summary">
+          <Container fluid>
             <Row>
               <Col md={3}>
                 <figure align="Center"> <Image src={Avatar} height="140px" alt="Prabesh Humagain" roundedCircle/><figcaption><strong>Hi there!<br/> I'm Prabesh Humagain</strong></figcaption></figure>
@@ -46,9 +46,6 @@ class About extends Component {
             <Col md={12} className="center-block d-flex justify-content-center">
             <h2>Education</h2>
             </Col>
-          </Row>
-          <Row>
-            
           </Row>
         </Container>
         <Container fluid>

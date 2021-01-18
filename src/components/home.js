@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import {Container,Row,Col} from 'react-bootstrap';
 //images
-import BackgroundImage from '../images/background-image.png';
+import BackgroundImage from '../images/background-image-test.png';
 //css
 import '../css/home.css';
 
