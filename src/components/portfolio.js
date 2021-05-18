@@ -27,6 +27,7 @@ import MachineLearning from '../images/certificates-images/machine-learning.png'
 import DeepLearning from '../images/certificates-images/neural-network-and-deep-learning.PNG';
 import CNN from '../images/certificates-images/convolutional-neural-network.PNG';
 import HyperparameterTuning from '../images/certificates-images/hyperparamet-turning.PNG';
+import Android from '../images/certificates-images/android-code-path.png';
 
 import Test from '../images/test.png';
 
@@ -146,12 +147,13 @@ export default class Portfolio extends Component {
                 disableAutoPlayOnAction={true}
                 items={
                   [
+                    <Figures src={Android} alt="Android" description="CodePath Mobile Product Development" width="80%"/>,
                     <Figures src={MongoDB} alt="MongoDB" description="MongoDB"  width="80%"/>,
                     <Figures src={MachineLearningAmazon} alt="Amazon Machine Learning Webinar" description="Amazon Machine Learning Webinar"  width="80%"/>,
                     <Figures src={MachineLearning} alt="Machine Learning" description="Machine Learning"  width="80%"/>,
                     <Figures src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning"  width="80%"/>,
                     <Figures src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network"  width="80%"/>,
-                    <Figures src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" width="80%"/>
+                    <Figures src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" width="80%"/>,
                   ]
                 }
                 responsive={responsive}

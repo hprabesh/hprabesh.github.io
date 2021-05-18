@@ -1,11 +1,9 @@
-.home { 
+/* .home { 
     position: absolute; 
-    width: 100%; /* for IE 6 */
+    width: 100%; 
  }
  
 .home-content{
-
-
     position: absolute; 
     top: 9%; 
     left: 0; 
@@ -15,20 +13,9 @@
  }
  
  .image{
-     border-radius:100% 0px 0px 0px;
-     /* border */
-/* border-image: linear-gradient(red, blue) 27; */
-    /* Add the blur effect */
-    /* filter: blur(0px); */
-  
-    /* Full height */
-    width:410px;
-    height:100%;
-    position: fixed;
-    top: 20px;
-    right: 0;
-    /* Center and scale the image nicely */
+    width:auto;;
+    height:auto;
     background-repeat: no-repeat;
     background-size: cover;
 
- }
+ } */

@@ -127,7 +127,7 @@ class App extends Component {
             }} />
           </Switch>
         </Router>
-          <Navbar className="navbar-dark navbar-bottom" expand="lg" fixed="bottom" sticky="bottom" >
+          <Navbar className="navbar-dark navbar-bottom" expand="lg"  sticky="bottom" >
             <Navbar.Brand><p style={{ fontSize: '15px', marginBottom: '0' }}><Time value={new Date()} format="YYYY" /> © Prabesh Humagain </p></Navbar.Brand>
           </Navbar>
       </React.Fragment>

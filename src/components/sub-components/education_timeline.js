@@ -19,7 +19,7 @@ const circleTimelineCSS={
 export default function Timeline(){
     return(
         <React.Fragment>
-            <VerticalTimeline className="vertical-timeline-custom-line">
+            <VerticalTimeline className="vertical-timeline-custom-line" animate={false}>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
                     contentStyle={contentStyleCSS}
@@ -32,7 +32,6 @@ export default function Timeline(){
                     <h5 className="vertical-timeline-element-subtitle vertical-timeline-element-text">Arlington, TX</h5>
                     <p className="vertical-timeline-element-text">
                         <strong>Major: </strong>Computer Science<br/>
-                        <strong>Minor: </strong>Mathematics (<em>Most Likely</em>)
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -40,8 +39,7 @@ export default function Timeline(){
                     contentStyle={contentStyleCSS}
                     contentArrowStyle={contentArrowStyleCSS}
                     date="2016 - 2018"
-                    iconStyle={circleTimelineCSS}  
-                    
+                    iconStyle={circleTimelineCSS}   
                 >
                     <h3 className="vertical-timeline-element-header vertical-timeline-element-text">High School</h3>
                     <h4 className="vertical-timeline-element-title vertical-timeline-element-text">Trinity International Secondary School</h4>
