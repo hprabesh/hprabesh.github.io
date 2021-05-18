@@ -18,7 +18,8 @@ import '../css/portfolio.css';
 
 //all images import
 //for Projects
-import PerformanceTracker from '../images/project-image/performance-tracker.png';
+import PerformanceTracker from '../images/project-image/performance-tracker.gif';
+import FlashCard from '../images/project-image/flashcard.gif';
 
 //for Certificates
 import MongoDB from '../images/certificates-images/mongodb.png';
@@ -29,7 +30,6 @@ import CNN from '../images/certificates-images/convolutional-neural-network.PNG'
 import HyperparameterTuning from '../images/certificates-images/hyperparamet-turning.PNG';
 import Android from '../images/certificates-images/android-code-path.png';
 
-import Test from '../images/test.png';
 
 const responsive = {
   0: { items: 1 },
@@ -47,22 +47,21 @@ export default class Portfolio extends Component {
 
     buttonStatus:-1, //default status for Project Pop Up Close
     titles:[
-        "MANGA Manager","Performance Tracker","Deans Engineering Challenge for Smart City","Weather Wiz"
+      "Performance Tracker","Flash Card Application","MANGA Manager","Deans Engineering Challenge for Smart City","Weather Wiz"
       ], // titles for pop up 
     projectDescription:[
-      "Project Description MANGA Manager",
+      "Performance Tracker System is a mobile app designed for Android devices. The main idea of the app is to help improve user's productivity. One of the core concepts is to allow user to add different priorities of task and help them complete those tasks on time using the idea of 'streak points', which can also be shared among the colleagues. The purpose behind using 'streak points' in our application is that, when user collects more streaks, it generates the dopamine reward and that would actually help user push further to improve their daily performances.",
       "A performance level monitoring web application – frontend written using React and Material-UI, backend written using Express, Node.js and MongoDB; used Azure DevOps to create CI/CD pipeline for the frontend and Azure Web App Service for the backend ",
       "Python (TensorFlow) project that uses Artificial Neural Network Model to predict the amount of radiation incident in Arlington Region to analyze the feasibility of hybrid structure of solar panel and windmill as an alternative source of energy with the goal to make Arlington a smart city. ",
       "Python project using Requests, Beautiful Soup, Matplotlib and Pandas libraries, to create the database of weather info of Arlington scrapped off the site from the past 20 years to analyze the weather change in Arlington region. ",
     ], //description for pop up
     projectURL:[
-      "https://github.com/hprabesh/MANGA_manager",
-      "https://github.com/hprabesh/eLive",
+      "https://github.com/hprabesh/cse3310-project",
+      "https://github.com/hprabesh/flashcard",
     ], //for URL of projects
     imageUrls:[
-      Test,
       PerformanceTracker,
-      MongoDB,
+      FlashCard,
       MachineLearning,
       DeepLearning
     ], //image for pop up
@@ -76,11 +75,11 @@ export default class Portfolio extends Component {
   slides = [
     {
       key: uuidv4(),
-      content: <img className="project-carousel" width="40px" src={Test} alt="1" onClick={()=>this.onButtonClick(0)} />
+      content: <img className="project-carousel" width="40px" src={PerformanceTracker} alt="1" onClick={()=>this.onButtonClick(0)} />
     },
     {
       key: uuidv4(),
-      content: <img className="project-carousel" src={PerformanceTracker} alt="2" width="40px" onClick={()=>this.onButtonClick(1)} />,
+      content: <img className="project-carousel" src={FlashCard} alt="2" width="40px" onClick={()=>this.onButtonClick(1)} />,
     },
     {
       key: uuidv4(),

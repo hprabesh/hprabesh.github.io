@@ -78,7 +78,7 @@ class About extends Component {
             title="Programming Languages"
             tools={["C/C++", "Python","JavaScript","Java"]}
             programming="true"
-            skillLevel="60"
+            skillLevel="80"
           />
           <Skills
             title="Other Tools"
