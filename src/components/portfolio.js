@@ -47,12 +47,11 @@ export default class Portfolio extends Component {
 
     buttonStatus:-1, //default status for Project Pop Up Close
     titles:[
-      "Performance Tracker","Flash Card Application","MANGA Manager","Deans Engineering Challenge for Smart City","Weather Wiz"
+      "Performance Tracker","Flash Card Application","MANGA Manager"
       ], // titles for pop up 
     projectDescription:[
-      "Performance Tracker System is a mobile app designed for Android devices. The main idea of the app is to help improve user's productivity. One of the core concepts is to allow user to add different priorities of task and help them complete those tasks on time using the idea of 'streak points', which can also be shared among the colleagues. The purpose behind using 'streak points' in our application is that, when user collects more streaks, it generates the dopamine reward and that would actually help user push further to improve their daily performances.",
-      "A performance level monitoring web application – frontend written using React and Material-UI, backend written using Express, Node.js and MongoDB; used Azure DevOps to create CI/CD pipeline for the frontend and Azure Web App Service for the backend ",
-      "Python (TensorFlow) project that uses Artificial Neural Network Model to predict the amount of radiation incident in Arlington Region to analyze the feasibility of hybrid structure of solar panel and windmill as an alternative source of energy with the goal to make Arlington a smart city. ",
+      "Performance Tracker System is an android app built to help improve user's productivity. One of the core concepts is to allow user to add different priorities of task and help them complete those tasks on time using the idea of 'streak points', which can also be shared among the colleagues. The app is written using Java, and Firebase is used to handle all backend services and maintaining database.",
+      "Flashcard is a simple android application that allows the user to create a flashcard making it easier to prepare for quizzes/exams.",
       "Python project using Requests, Beautiful Soup, Matplotlib and Pandas libraries, to create the database of weather info of Arlington scrapped off the site from the past 20 years to analyze the weather change in Arlington region. ",
     ], //description for pop up
     projectURL:[
@@ -62,8 +61,6 @@ export default class Portfolio extends Component {
     imageUrls:[
       PerformanceTracker,
       FlashCard,
-      MachineLearning,
-      DeepLearning
     ], //image for pop up
 
 
@@ -84,10 +81,6 @@ export default class Portfolio extends Component {
     {
       key: uuidv4(),
       content: <img src={MongoDB} alt="3" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(2)} />
-    },
-    {
-      key: uuidv4(),
-      content: <img className="project-carousel" src={MachineLearning} alt="4"  width="40px" onClick={()=>this.onButtonClick(3)}/>
     },
 
   ].map((slide, index) => {

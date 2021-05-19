@@ -29,19 +29,16 @@ class Project extends Component {
           <Modal show={true}>
           <ModalHeader>
             <ModalTitle>Project: {this.state.title}</ModalTitle>
-            
+            <Button onClick={this.onClosePopUps}>Cancel</Button>
           </ModalHeader>
           <ModalBody>
             <figure>
-              <center><img className="project-image" src={this.state.image} height="70%" width="80%" alt={this.state.title}/>
+              <center><img className="project-image" src={this.state.image} height="450px"  alt={this.state.title}/>
               <figcaption>Project Link: <em><a href={this.state.projectLink} title="GitHub Project" rel="noopener">{this.state.projectLink}</a></em></figcaption></center>
             </figure>
-            <strong>Description</strong>:<br/>{this.state.projectDescription}<br/><br/><br/>
           </ModalBody>
           <ModalFooter>
-            
-              <Button onClick={this.onClosePopUps}>Cancel</Button>
-              
+          <p><strong>Description</strong>:<br/><br/>{this.state.projectDescription}</p>
           </ModalFooter>
         </Modal>
          );

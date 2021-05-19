@@ -7,26 +7,26 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "boostrap": "^2.0.0",
-    "bootstrap": "^4.5.3",
-    "material-ui-image": "^3.2.3",
-    "moment": "^2.27.0",
-    "netlify-cli": "^2.58.0",
-    "react": "^16.13.1",
-    "react-alice-carousel": "^2.2.0",
-    "react-bootstrap": "^1.4.0",
-    "react-dom": "^16.13.1",
+    "bootstrap": "^4.6.0",
+    "material-ui-image": "^3.3.2",
+    "moment": "^2.29.1",
+    "netlify-cli": "^2.71.0",
+    "react": "^16.14.0",
+    "react-alice-carousel": "^2.5.1",
+    "react-bootstrap": "^1.6.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
-    "react-particles-js": "^3.3.0",
+    "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
-    "react-router-transition": "^2.0.0",
-    "react-scripts": "^4.0.1",
-    "react-spring-3d-carousel": "^1.2.0",
+    "react-router-transition": "^2.1.0",
+    "react-scripts": "^4.0.3",
+    "react-spring-3d-carousel": "^1.2.1",
     "react-time": "^4.3.0",
-    "react-vertical-timeline-component": "^3.3.1",
-    "typewriter-effect": "^2.13.1"
+    "react-vertical-timeline-component": "^3.3.3",
+    "typewriter-effect": "^2.17.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=9000 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -47,6 +47,6 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.6.0"
   }
 }
