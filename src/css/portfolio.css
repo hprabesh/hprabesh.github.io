@@ -14,22 +14,18 @@
     background-color: #e9ecef ;
     margin-top: -2% !important;
     height: 120%;
-}
+} 
 img.project-carousel{
-    height:500px;
-    width: 500px;
-    border-radius: 15px;
+    border-radius: 25px;
+    border: 2px solid #163450;
+    height:auto;
+    width: auto;
 }
 @media only screen and (max-width: 400px){
     .aboutJumboTron{
         padding-right: 0%;
         padding-left:0%;
         margin-bottom:35% ;
-
-    }
-    img.project-carousel{
-        height:300px;
-        width: 300px;
     }
 
 }

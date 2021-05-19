@@ -13,6 +13,9 @@ class Certificates extends Component {
             buttonStatus:false,
         }
     }
+    handleDragStart=(e)=>{
+        e.preventDefault();
+      }
     
 
     render() { 
@@ -25,6 +28,8 @@ class Certificates extends Component {
                         src={this.state.src}
                         style={{borderRadius:"15px"}}
                         draggable="false"
+                        onDragStart={this.handleDragStart}
+                        
                     />
                     <Figure.Caption>
                         <center><em>{this.state.description}</em></center>

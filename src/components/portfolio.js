@@ -80,7 +80,7 @@ export default class Portfolio extends Component {
     },
     {
       key: uuidv4(),
-      content: <img src={MongoDB} alt="3" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(2)} />
+      content: <img src={MongoDB}  alt="3" className="project-carousel" width="40px" onClick={()=>this.onButtonClick(2)} />
     },
 
   ].map((slide, index) => {
@@ -106,6 +106,7 @@ export default class Portfolio extends Component {
       buttonStatus:i,
     });
   }
+  
 
 
   render() { 
@@ -132,21 +133,21 @@ export default class Portfolio extends Component {
                 <AliceCarousel
                 activeIndex={0}
                 touchTracking={true}
-                mouseTracking={true}
+                mouseDragEnabled
+                mouseTracking
                 autoPlayInterval={2000}
                 autoPlayDirection="rtl"
-                mouseTrackingEnabled={true}
                 disableAutoPlayOnAction={true}
                 items={
                   [
-                    <Figures src={Android} alt="Android" description="CodePath Mobile Product Development" width="80%"/>,
-                    <Figures src={MongoDB} alt="MongoDB" description="MongoDB"  width="80%"/>,
-                    <Figures src={MachineLearningAmazon} alt="Amazon Machine Learning Webinar" description="Amazon Machine Learning Webinar"  width="80%"/>,
-                    <Figures src={MachineLearning} alt="Machine Learning" description="Machine Learning"  width="80%"/>,
-                    <Figures src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning"  width="80%"/>,
-                    <Figures src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network"  width="80%"/>,
-                    <Figures src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" width="80%"/>,
-                  ]
+                    <Figures data-value="1" src={Android} alt="Android" description="CodePath Mobile Product Development" width="80%" />,
+                    <Figures data-value="2" src={MongoDB} alt="MongoDB" description="MongoDB"  width="80%"/>,
+                    <Figures data-value="3" src={MachineLearningAmazon} alt="Amazon Machine Learning Webinar" description="Amazon Machine Learning Webinar"  width="80%"/>,
+                    <Figures data-value="4" src={MachineLearning} alt="Machine Learning" description="Machine Learning"  width="80%"/>,
+                    <Figures data-value="5" src={DeepLearning} alt="Neural Network and Deep Learning" description="Neural Network and Deep Learning"  width="80%"/>,
+                    <Figures data-value="6" src={CNN} alt="Convolutional NeuralNetwork" description="Convolutional Neural Network"  width="80%"/>,
+                    <Figures data-value="7" src={HyperparameterTuning} alt="Tuning Hyperparameter" description="Improving Deep Neural Netwokrs; Hyperparameter Tuning, Regularization and Optimization" width="80%"/>,
+                 ]
                 }
                 responsive={responsive}
               />
