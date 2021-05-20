@@ -1,0 +1,25 @@
+/* .home { 
+    position: absolute; 
+    width: 100%; 
+ }
+ 
+.home-content{
+    position: absolute; 
+    top: 9%; 
+    left: 0; 
+    width: 100%; 
+    padding-right: 40%;
+    padding-bottom: 5%;
+ } */
+ 
+ .image{
+    width:80%;;
+    height:auto;
+    border-radius: 50%;
+ }
+ .updates{
+   width:40%;
+   border-radius: 5%;
+   -webkit-user-drag: none;
+
+ }

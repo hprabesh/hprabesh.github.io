@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Container,Row,Col} from 'react-bootstrap';
+import {Container,Row,Col, Jumbotron} from 'react-bootstrap';
 
 //all CSS Import below
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -81,32 +81,30 @@ class Contact extends Component {
                 Submit Message
               </button>
             </form> 
+ 
+            </Container>
+            <Jumbotron className="hobbies">
+              <Container fluid>      
+                <Row className="letsConnect align-items-center">
+                  <Col md={4}  className="center-block d-flex justify-content-center"><h1 className="letsConnectChild">Let's Connect</h1></Col>
 
-            <Row className="letsConnect align-items-center">
-              <Col md={4}  className="center-block d-flex justify-content-center"><h1 className="letsConnectChild">Let's Connect</h1></Col>
-
-              <Col md={4} >
-                <Row >
-                  <Col xs={4}   className="center-block d-flex justify-content-center">
-                    <figure align="Center"><a href="http://github.com/hprabesh/" title="GitHub" target="_blank" rel="noreferrer"><img src={GitHub}  height="40px" alt="GitHub Icon" /></a><figcaption style={{color:'white', fontWeight:600}}>GitHub</figcaption></figure><br/>
+                  <Col md={4} >
+                    <Row >
+                      <Col xs={4}  className="center-block d-flex justify-content-center">
+                        <figure align="Center"><a href="http://github.com/hprabesh/" title="GitHub" target="_blank" rel="noreferrer"><img src={GitHub}  height="40px" alt="GitHub Icon" /></a><figcaption style={{color:'white', fontWeight:600}}>GitHub</figcaption></figure><br/>
+                      </Col>
+                      <Col xs={4}   className="center-block d-flex justify-content-center">
+                      <figure align="Center"><a href="https://www.instagram.com/prab3ssss/" title="Instagram" target="_blank" rel="noreferrer"><img src={Instagram} height="40px" alt="Instagram Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>Instagram</figcaption></figure>
+                      </Col>
+                      <Col xs={4}   className="center-block d-flex justify-content-center">
+                      <figure align="Center"><a href="https://www.linkedin.com/in/hprabesh/" title="LinkedIn" target="_blank" rel="noreferrer"><img src={LinkedIn} height="40px" alt="LinkedIn Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>LinkedIn</figcaption></figure>
+                      </Col>
+                      <Col></Col>
+                    </Row>
                   </Col>
-                  <Col xs={4}   className="center-block d-flex justify-content-center">
-                  <figure align="Center"><a href="https://www.instagram.com/prab3ssss/" title="Instagram" target="_blank" rel="noreferrer"><img src={Instagram} height="40px" alt="Instagram Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>Instagram</figcaption></figure>
-                  </Col>
-                  <Col xs={4}   className="center-block d-flex justify-content-center">
-                  <figure align="Center"><a href="https://www.linkedin.com/in/hprabesh/" title="LinkedIn" target="_blank" rel="noreferrer"><img src={LinkedIn} height="40px" alt="LinkedIn Icon"/></a><figcaption style={{color:'white', fontWeight:600}}>LinkedIn</figcaption></figure>
-                  </Col>
-                  <Col></Col>
                 </Row>
-              </Col>
-            </Row>
-            <Row className="align-items-center">
-              <Col md={12} className="center-block d-flex justify-content-center">
-                <h1 className="footer" style={{color:'#5883b4'}}>Learn more <a href="/about-me" title="About Me" style={{color:'#5883b4',fontWeight:'700'}}>about me</a>.</h1>
-              </Col>
-            </Row>
-          </Container>
-          
+                </Container>
+            </Jumbotron>
         </React.Fragment>
      );
   }
