@@ -33,7 +33,7 @@ class Project extends Component {
           </ModalHeader>
           <ModalBody>
             <figure>
-              <center><img className="project-image" src={this.state.image} height="450px"  alt={this.state.title}/>
+              <center><img className="project-image" src={this.state.image} width="100%" height="80%" alt={this.state.title}/>
               <figcaption>Project Link: <em><a href={this.state.projectLink} title="GitHub Project" rel="noopener">{this.state.projectLink}</a></em></figcaption></center>
             </figure>
           </ModalBody>

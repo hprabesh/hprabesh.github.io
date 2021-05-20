@@ -1,32 +1,45 @@
 .aboutJumboTron{
     /* padding-top: -7% !important; */
-    margin-top: -1.5%;
-    width: 100% !important;
+    width: auto !important;
+    margin-top: 12%;
     margin-bottom: 15%;
-    /* padding-bottom: 15%; */
     padding-right: 10%;
     padding-left:10%;
-    height:300px;
+    height:600px;
     align-items: center;
-
 }
 .projectBlock{
-    background-color: #e9ecef ;
-    margin-top: -2% !important;
-    height: 120%;
+    padding-top: -10% !important;
+    margin-top: -15%;
 } 
 img.project-carousel{
     border-radius: 25px;
     border: 2px solid #163450;
-    height:auto;
+    height:400px;
     width: auto;
 }
 @media only screen and (max-width: 400px){
     .aboutJumboTron{
         padding-right: 0%;
+        margin-top: 8% !important;
         padding-left:0%;
-        margin-bottom:35% ;
+        margin-bottom:35% !important;
+        height:300px !important;
+    }
+    img.project-carousel{
+        height:200px !important;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .aboutJumboTron{
+        height:650px !important;
+        margin-bottom:5% !important;
     }
 
 }
 
+.certificates{
+    margin-left: 3%;
+    margin-right: 3%;
+}
