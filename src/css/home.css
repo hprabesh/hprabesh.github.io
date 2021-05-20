@@ -10,12 +10,16 @@
     width: 100%; 
     padding-right: 40%;
     padding-bottom: 5%;
- }
+ } */
  
  .image{
-    width:auto;;
+    width:80%;;
     height:auto;
-    background-repeat: no-repeat;
-    background-size: cover;
+    border-radius: 50%;
+ }
+ .updates{
+   width:40%;
+   border-radius: 5%;
+   -webkit-user-drag: none;
 
- } */
+ }
