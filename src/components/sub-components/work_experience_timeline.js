@@ -39,37 +39,26 @@ export default function Timeline() {
             <p>
               <ol>
                 <li>
-                  Create Office of Information Technology Project Pages
-                  utilizing HTML5, CSS, JavaScript, and PHP on Cascade CMS
+                  Create and manage the Office of Information Technology, Human
+                  Resources, Business Affairs, and the Help sites on Cascade and
+                  Sitecore.
                 </li>
                 <li>
-                  Prepare training materials, videos and graphics using Adobe
-                  Creative Cloud, HTML5, and Bootstrap3
+                  Build the Web Crawling and Web Scrapping tools to maintain the
+                  database of all the legal documents related to Forms and
+                  Policies and Procedures.
                 </li>
                 <li>
-                  Improve web accessibility for Business-Affairs and Office of
-                  Information Technology (OIT) sites{" "}
+                  Manage the project sites and their workflows and perform
+                  timely updates on the Office of Information Technology Project
+                  sites collaborating with the Project Managers
                 </li>
                 <li>
-                  Analyze the impacts of upgrading software systems and work on
-                  the project based on their lifecycle
+                  Improve the web accessibility of the Office of Information
+                  Technology, Human Resources, and the Business Affairs sites
                 </li>
                 <li>
-                  Perform Regression Testing on Sitecore using Azure DevOps
-                  Tools
-                </li>
-                <li>
-                  Build Web Crawler and Web Scraper using Python (Requests and
-                  Beautiful Soup) to map the UT Arlington site and also maintain
-                  the database of all the PDF, Docx, and Excel files.
-                </li>
-                <li>
-                  Write a Python script to convert DOCX, PPTX, XLSX files to PDF
-                  and upload them on the server
-                </li>
-                <li>
-                  Improve the web accessibility of the OIT and the Business
-                  Affairs web sites
+                  Perform Regression Testing for Sitecore using Azure DevOps
                 </li>
               </ol>
             </p>
