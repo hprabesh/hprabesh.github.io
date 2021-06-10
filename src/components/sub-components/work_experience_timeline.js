@@ -34,31 +34,21 @@ export default function Timeline() {
           iconStyle={circleTimelineCSS}
         >
           <div className="vertical-timeline-element-text">
-            <p>Web Developer at Office of Information Technology, UTA</p>
+            <p>Web Developer at the Office of Information Technology, UTA</p>
             <p></p>
             <p>
               <ol>
                 <li>
-                  Create and manage the Office of Information Technology, Human
-                  Resources, Business Affairs, and the Help sites on Cascade and
-                  Sitecore.
+                Create and manage the Office of Information Technology, Human Resources, Business Affairs, and the Help sites on Cascade and Sitecore.
                 </li>
                 <li>
-                  Build the Web Crawling and Web Scrapping tools to maintain the
-                  database of all the legal documents related to Forms and
-                  Policies and Procedures.
+                Build the Web Crawling and Web Scrapping tools to maintain the database of all the legal documents related to Forms and Policies and Procedures.
                 </li>
                 <li>
-                  Manage the project sites and their workflows and perform
-                  timely updates on the Office of Information Technology Project
-                  sites collaborating with the Project Managers
+                Manage the project sites and their workflows and perform timely updates on the Office of Information Technology Project sites collaborating with the Project Managers
                 </li>
                 <li>
-                  Improve the web accessibility of the Office of Information
-                  Technology, Human Resources, and the Business Affairs sites
-                </li>
-                <li>
-                  Perform Regression Testing for Sitecore using Azure DevOps
+                Improve the web accessibility of the Office of Information Technology, Human Resources, and the Business Affairs sites
                 </li>
               </ol>
             </p>

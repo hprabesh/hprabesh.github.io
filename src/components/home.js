@@ -4,6 +4,7 @@ import { Jumbotron } from "react-bootstrap";
 //images
 import BackgroundImage from "../images/IMG_0478.jpg";
 // new updates
+import UpdatedPerformanceTracker from '../images/project-image/updated-performance-tracker.png';
 import PerformanceTracker from "../images/project-image/performance-tracker.gif";
 import Android from "../images/certificates-images/android-code-path.png";
 import FlashCard from "../images/project-image/flashcard.gif";
@@ -69,13 +70,24 @@ class Home extends Component {
               <figure>
                 <center>
                   <img
+                    src={UpdatedPerformanceTracker}
+                    className="updates"
+                    alt="Updated App Performance Tracker"
+                    height="80%"/>
+                    <figcaption><br/>
+                      Updated Performance Tracker.<br/>New Features: Connection to Canvas API<br/>Notification Button.</figcaption>
+                </center>
+              </figure>,
+              <figure>
+                <center>
+                  <img
                     src={PerformanceTracker}
                     className="updates"
                     alt="Performance Tracker"
                     height="80%"
                   />
 
-                  <figcaption>
+                  <figcaption><br/>
                     New Project Performance Tracker
                     <br />
                     has been added to{" "}
@@ -94,7 +106,7 @@ class Home extends Component {
                     alt="Android Certification"
                   />
 
-                  <figcaption>
+                  <figcaption><br/>
                     Received an Android App Development
                     <br />
                     Certification from CodePath
@@ -109,7 +121,7 @@ class Home extends Component {
                     alt="Android Certification"
                   />
 
-                  <figcaption>
+                  <figcaption><br/>
                     Completed my first android application: FlashCard
                   </figcaption>
                 </center>

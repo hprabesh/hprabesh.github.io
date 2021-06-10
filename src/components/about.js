@@ -100,7 +100,13 @@ class About extends Component {
             </Col>
           </Row>
           <Skills
-            title="Front-End Development Tools"
+            title="Programming Languages"
+            tools={["C/C++", "Python", "JavaScript", "Java"]}
+            programming="true"
+            skillLevel="80"
+          />
+          <Skills
+            title="Front-End Web Development Tools"
             tools={["HTML", "CSS", "XML", "React", "jQuery", "Bootstrap"]}
             skillLevel="70"
           />
@@ -109,30 +115,27 @@ class About extends Component {
             tools={["WordPress, Cascade, Sitecore"]}
             skillLevel="65"
           />
-
+          <Skills
+            title="Version Control"
+            tools ={["Git"]}
+            skillLevel ="85"
+          />
           <Skills
             title="Back End Tools"
             tools={["ExpressJS", "Flask", "PHP"]}
             skillLevel="50"
           />
-          <Skills
-            title="Programming Languages"
-            tools={["C/C++", "Python", "JavaScript", "Java"]}
-            programming="true"
-            skillLevel="80"
-          />
+          
           <Skills
             title="Other Tools"
             tools={[
-              "Git",
               "Firebase",
               "MongoDB",
               "Android Studio",
               "NumPy",
               "Postman",
               "Matlab",
-              "NI Multisim",
-              "LabVIEW",
+              "Linux"
             ]}
             programming="true"
             skillLevel="75"
