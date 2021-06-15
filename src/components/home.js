@@ -4,7 +4,7 @@ import { Jumbotron } from "react-bootstrap";
 //images
 import BackgroundImage from "../images/IMG_0478.jpg";
 // new updates
-import UpdatedPerformanceTracker from '../images/project-image/updated-performance-tracker.png';
+import UpdatedPerformanceTracker from "../images/project-image/performance-tracker-new-layout.gif";
 import PerformanceTracker from "../images/project-image/performance-tracker.gif";
 import Android from "../images/certificates-images/android-code-path.png";
 import FlashCard from "../images/project-image/flashcard.gif";
@@ -73,9 +73,14 @@ class Home extends Component {
                     src={UpdatedPerformanceTracker}
                     className="updates"
                     alt="Updated App Performance Tracker"
-                    height="80%"/>
-                    <figcaption><br/>
-                      Updated Performance Tracker.<br/>New Features: Connection to Canvas API<br/>Notification Button.</figcaption>
+                    height="80%"
+                  />
+                  <figcaption>
+                    <br />
+                    Updated Performance Tracker.
+                    <br />
+                    Feature updated: Successful Connection to Canvas API
+                  </figcaption>
                 </center>
               </figure>,
               <figure>
@@ -87,7 +92,8 @@ class Home extends Component {
                     height="80%"
                   />
 
-                  <figcaption><br/>
+                  <figcaption>
+                    <br />
                     New Project Performance Tracker
                     <br />
                     has been added to{" "}
@@ -106,7 +112,8 @@ class Home extends Component {
                     alt="Android Certification"
                   />
 
-                  <figcaption><br/>
+                  <figcaption>
+                    <br />
                     Received an Android App Development
                     <br />
                     Certification from CodePath
@@ -121,7 +128,8 @@ class Home extends Component {
                     alt="Android Certification"
                   />
 
-                  <figcaption><br/>
+                  <figcaption>
+                    <br />
                     Completed my first android application: FlashCard
                   </figcaption>
                 </center>
