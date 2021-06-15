@@ -44,7 +44,7 @@ class Home extends Component {
               </p>
               <p>
                 Currently, I am working part-time as a web developer at the
-                Office of Information Technology, where I help design and build
+                University of Texas at Arlington, where I help design and build
                 accessible web pages for the Legal Affairs, Project Managers,
                 and Procurements.
               </p>
