@@ -6,9 +6,7 @@ import BackgroundImage from "../images/IMG_0478.jpg";
 // new updates
 import AmazonCloudPracticionar from "../images/certificates-images/amazon-cloud-computing.png";
 import UpdatedPerformanceTracker from "../images/project-image/performance-tracker-new-layout.gif";
-import PerformanceTracker from "../images/project-image/performance-tracker.gif";
 import Android from "../images/certificates-images/android-code-path.png";
-import FlashCard from "../images/project-image/flashcard.gif";
 //css
 import "../css/home.css";
 
@@ -101,27 +99,6 @@ class Home extends Component {
               <figure>
                 <center>
                   <img
-                    src={PerformanceTracker}
-                    className="updates"
-                    alt="Performance Tracker"
-                    height="80%"
-                  />
-
-                  <figcaption>
-                    <br />
-                    New Project Performance Tracker
-                    <br />
-                    has been added to{" "}
-                    <a href="./portfolio" title="Portfolio">
-                      Portfolio
-                    </a>{" "}
-                    page.
-                  </figcaption>
-                </center>
-              </figure>,
-              <figure>
-                <center>
-                  <img
                     src={Android}
                     className="updates"
                     alt="Android Certification"
@@ -132,20 +109,6 @@ class Home extends Component {
                     Received an Android App Development
                     <br />
                     Certification from CodePath
-                  </figcaption>
-                </center>
-              </figure>,
-              <figure>
-                <center>
-                  <img
-                    src={FlashCard}
-                    className="updates"
-                    alt="Android Certification"
-                  />
-
-                  <figcaption>
-                    <br />
-                    Completed my first android application: FlashCard
                   </figcaption>
                 </center>
               </figure>,
