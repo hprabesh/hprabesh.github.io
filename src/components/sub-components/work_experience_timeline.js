@@ -39,17 +39,19 @@ export default function Timeline() {
             <p>
               <ol>
                 <li>
-                Create and manage the Office of Information Technology, Human Resources, Business Affairs, and the Help sites on Cascade and Sitecore.
+                Maintain the database records of Transparency Reports and Job Descriptions using JavaScript library (Tabulator)
+and JSON.
                 </li>
                 <li>
-                Build the Web Crawling and Web Scrapping tools to maintain the database of all the legal documents related to Forms and Policies and Procedures.
-                </li>
+                Collaborate with Project Managers, Legal and Help Desk Analyst team to maintain the Office of Information
+Technology, Human Resources, and Business Affairs sites hosted on AWS Elastic File System (EFS) storage
+service. </li>
                 <li>
-                Manage the project sites and their workflows and perform timely updates on the Office of Information Technology Project sites collaborating with the Project Managers
-                </li>
+                Implemented the Depth First Search Algorithm to build the Web Crawling and Web Scraping tool using Python
+to keep track of more than 600 Legal Documents during site migration</li>
                 <li>
-                Improve the web accessibility of the Office of Information Technology, Human Resources, and the Business Affairs sites
-                </li>
+                Wrote and maintained Knowledge-Based Articles to help students and faculty/staff transition to new updates on
+the MyMav school portal by collaborating with the Communications and the Developer team.   </li>
               </ol>
             </p>
           </div>
