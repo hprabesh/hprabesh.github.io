@@ -4,6 +4,7 @@ import { Jumbotron } from "react-bootstrap";
 //images
 import BackgroundImage from "../images/IMG_0478.jpg";
 // new updates
+import AmazonCloudPracticionar from "../images/project-image/amazon-cloud-computing.png";
 import UpdatedPerformanceTracker from "../images/project-image/performance-tracker-new-layout.gif";
 import PerformanceTracker from "../images/project-image/performance-tracker.gif";
 import Android from "../images/certificates-images/android-code-path.png";
@@ -67,6 +68,20 @@ class Home extends Component {
             autoPlayDirection="rtl"
             disableAutoPlayOnAction={true}
             items={[
+              <figure>
+                <center>
+                  <img
+                    src={AmazonCloudPracticionar}
+                    className="updates"
+                    alt="AWS Cloud Practitioner Essentials"
+                    height="80%"
+                  />
+                  <figcaption>
+                    <br />
+                    Completed AWS Cloud Practitioner Essentials
+                  </figcaption>
+                </center>
+              </figure>,
               <figure>
                 <center>
                   <img
