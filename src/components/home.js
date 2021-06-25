@@ -31,6 +31,7 @@ class Home extends Component {
                 className="image"
                 src={BackgroundImage}
                 alt="Background: Prabesh Humagain @ Winter - 2021: Arlington, TX"
+                width="500px"
               />
             </div>
             <div class="col-sm-8">
@@ -74,7 +75,6 @@ class Home extends Component {
                     src={AmazonCloudPracticionar}
                     className="updates"
                     alt="AWS Cloud Practitioner Essentials"
-                    height="80%"
                   />
                   <figcaption>
                     <br />

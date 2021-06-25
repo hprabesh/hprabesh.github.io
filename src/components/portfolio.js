@@ -23,13 +23,14 @@ import MangaManagerGif from "../images/project-image/manga-manager.gif";
 import MangaManagerPng from "../images/project-image/manga-manager.PNG";
 
 //for Certificates
+import AmazonCloudPracticionar from "../images/certificates-images/amazon-cloud-computing.png";
+import Android from "../images/certificates-images/android-code-path.png";
 import MongoDB from "../images/certificates-images/mongodb.png";
 import MachineLearningAmazon from "../images/certificates-images/amazon-machinelearning.png";
 import MachineLearning from "../images/certificates-images/machine-learning.png";
 import DeepLearning from "../images/certificates-images/neural-network-and-deep-learning.PNG";
 import CNN from "../images/certificates-images/convolutional-neural-network.PNG";
 import HyperparameterTuning from "../images/certificates-images/hyperparamet-turning.PNG";
-import Android from "../images/certificates-images/android-code-path.png";
 
 const responsive = {
   0: { items: 1 },
@@ -221,6 +222,13 @@ export default class Portfolio extends Component {
               autoPlayDirection="rtl"
               disableAutoPlayOnAction={true}
               items={[
+                <Figures
+                  data-value="1"
+                  src={AmazonCloudPracticionar}
+                  alt="Android"
+                  description="Completed AWS Cloud Practitioner Essentials"
+                  width="80%"
+                />,
                 <Figures
                   data-value="1"
                   src={Android}
