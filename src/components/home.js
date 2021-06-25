@@ -4,7 +4,7 @@ import { Jumbotron } from "react-bootstrap";
 //images
 import BackgroundImage from "../images/IMG_0478.jpg";
 // new updates
-import AmazonCloudPracticionar from "../images/project-image/amazon-cloud-computing.png";
+import AmazonCloudPracticionar from "../images/certificates-images/amazon-cloud-computing.png";
 import UpdatedPerformanceTracker from "../images/project-image/performance-tracker-new-layout.gif";
 import PerformanceTracker from "../images/project-image/performance-tracker.gif";
 import Android from "../images/certificates-images/android-code-path.png";
