@@ -16,7 +16,7 @@ import "../css/portfolio.css";
 
 //all images import
 //for Projects
-import PerformanceTracker from "../images/project-image/performance-tracker.gif";
+import PerformanceTracker from "../images/project-image/performance-tracker-new-layout.gif";
 import FlashCard from "../images/project-image/flashcard.gif";
 import ToDoList from "../images/project-image/ToDoList.png";
 import MangaManagerGif from "../images/project-image/manga-manager.gif";
