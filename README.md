@@ -1,2 +1,2 @@
-This is a portfolio project built using React and Material-UI 
+This is a portfolio project built using React
 
