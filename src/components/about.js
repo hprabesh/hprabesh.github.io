@@ -37,7 +37,7 @@ class About extends Component {
                   />
                   <figcaption>
                     <strong>
-                      Hey there!
+                      Hi!
                       <br /> I'm Prabesh Humagain
                     </strong>
                   </figcaption>
@@ -45,19 +45,21 @@ class About extends Component {
               </Col>
               <Col md={9}>
                 <h1>Summary:</h1>
-                <p>I like designing and building things.</p>
                 <p>
-                  I am a junior at the University of Texas at Arlington (UTA)
-                  pursuing an Honors degree in Computer Science with interests
-                  in Machine Learning and Neural Networks, Web and Android
-                  Application Development. And currently, I am working part-time
-                  as a web developer at the Office of Information Technology,
-                  where I help design and build accessible web pages for the
-                  Legal Affairs, Project Managers, and Procurements. My current
-                  role as a full-time student and part-time web developer has
-                  helped me develop time-management, teamwork, and
-                  problem-solving skills while also adapting to the advancing
-                  technology.
+                  I am a rising junior majoring in Computer Science at the
+                  University of Texas at Arlington (UTA). I am passionate about
+                  Web and Android Application Development, Machine Learning, and
+                  Neural networks, and I am actively seeking an internship/co-op
+                  position in a similar field.
+                </p>
+                <p>
+                  I have several experiences (work-related experience and school
+                  team projects) relating to web and android application
+                  development during my academic career. Also, these experiences
+                  have helped me develop teamwork and communication skills. I am
+                  proficient in programming languages Java, JavaScript, Python,
+                  and C/C++ with a strong foundation in Object-Oriented
+                  Programming and Algorithm and Data Structure.
                 </p>
               </Col>
             </Row>
@@ -115,17 +117,13 @@ class About extends Component {
             tools={["WordPress, Cascade, Sitecore"]}
             skillLevel="65"
           />
-          <Skills
-            title="Version Control"
-            tools ={["Git"]}
-            skillLevel ="85"
-          />
+          <Skills title="Version Control" tools={["Git"]} skillLevel="85" />
           <Skills
             title="Back End Tools"
             tools={["ExpressJS", "Flask", "PHP"]}
             skillLevel="50"
           />
-          
+
           <Skills
             title="Other Tools"
             tools={[
@@ -135,7 +133,7 @@ class About extends Component {
               "NumPy",
               "Postman",
               "Matlab",
-              "Linux"
+              "Linux",
             ]}
             programming="true"
             skillLevel="75"

@@ -37,16 +37,20 @@ class Home extends Component {
               <br />
               <p>I like designing and building things.</p>
               <p>
-                I am a junior at the University of Texas at Arlington pursuing
-                an Honors degree in Computer Science with interests in Machine
-                Learning and Neural Networks, Web and Android Application
-                Development.
+                I am a rising junior majoring in Computer Science at the
+                University of Texas at Arlington (UTA). I am passionate about
+                Web and Android Application Development, Machine Learning, and
+                Neural networks, and I am actively seeking an internship/co-op
+                position in a similar field.
               </p>
               <p>
-                Currently, I am working part-time as a web developer at the
-                University of Texas at Arlington, where I help design and build
-                accessible web pages for the Legal Affairs, Project Managers,
-                and Procurements.
+                I have several experiences (work-related experience and school
+                team projects) relating to web and android application
+                development during my academic career. Also, these experiences
+                have helped me develop teamwork and communication skills. I am
+                proficient in programming languages Java, JavaScript, Python,
+                and C/C++ with a strong foundation in Object-Oriented
+                Programming and Algorithm and Data Structure.
               </p>
             </div>
           </div>

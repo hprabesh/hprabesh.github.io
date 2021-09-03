@@ -174,7 +174,8 @@ class App extends Component {
         >
           <Navbar.Brand>
             <p style={{ fontSize: "15px", marginBottom: "0" }}>
-              <Time value={new Date()} format="YYYY" /> © Prabesh Humagain{" "}
+              <Time value={new Date()} format="YYYY" /> © Prabesh Humagain -{" "}
+              <em>Built with ReactJS</em>{" "}
             </p>
           </Navbar.Brand>
         </Navbar>
